@@ -1,11 +1,13 @@
-let readAll = document.getElementById('readAll');
-readAll.addEventListener("click", function() {
+export function readAlls () {
     let read = document.getElementById('inBlock');
     read.style.height = 'auto';
     readAll.style.display = 'none';
     let readClose = document.getElementById('readClose');
     readClose.style.display = 'inline';
-})
+}
+
+let readAll = document.getElementById('readAll');
+readAll.addEventListener("click", readAlls);
 
 if (matchMedia) {
     let screen = window.matchMedia("(min-width:768px)");
@@ -13,7 +15,7 @@ if (matchMedia) {
     closeText(screen);
 }
 
-function closeText(screen) {
+export function closeText(screen) {
     if (screen.matches) {
         let readClose = document.getElementById('readClose');
         readClose.addEventListener("click", function() {

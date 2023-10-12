@@ -1,3 +1,10 @@
+import {resizableSwiper} from './slider'
+import {addCall, removeCall, closemessageModal} from './message.js'
+import {addOrder, removeOrder, closeOrderModal} from './order.js'
+import {addOpen, removeOpen, closeModal} from './popup.js'
+import {readAlls, closeText} from './read.js'
+
+
 let show = document.getElementById('all-brands');
 show.addEventListener('click', openBrands);
 function openBrands() {

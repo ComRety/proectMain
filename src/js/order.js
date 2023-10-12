@@ -1,19 +1,21 @@
-let order = document.getElementById('button-call');
-order.addEventListener("click", function() {
+export function addOrder () {
     document.getElementById('order-call').classList.add('order');
-})
+}
+
+export function removeOrder () {
+    document.getElementById('order-call').classList.remove('order');
+}
+
+let order = document.getElementById('button-call');
+order.addEventListener("click", addOrder);
 
 let orderOne = document.getElementById('call-popup');
-orderOne.addEventListener("click", function() {
-    document.getElementById('order-call').classList.add('order');
-})
+orderOne.addEventListener("click", addOrder);
 
 let orderClose = document.getElementById('button-close-order');
-orderClose.addEventListener("click", function() {
-    document.getElementById('order-call').classList.remove('order');
-})
+orderClose.addEventListener("click", removeOrder);
 
-const closeOrderModal = event => {
+export const closeOrderModal = event => {
     let target = event.target;
 
     if (target === orderElem) {
