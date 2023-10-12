@@ -3,6 +3,7 @@ import {addCall, removeCall, closemessageModal} from './message.js'
 import {addOrder, removeOrder, closeOrderModal} from './order.js'
 import {addOpen, removeOpen, closeModal} from './popup.js'
 import {readAlls, closeText} from './read.js'
+import '../scss/style.scss'
 
 
 let show = document.getElementById('all-brands');

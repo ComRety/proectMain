@@ -1,6 +1,1466 @@
-/*!*****************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
-  \*****************************************************************/
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
+  \**************************************************************************************************************/
+@import url(https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css);
+/*!******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss (1) ***!
+  \******************************************************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  -moz-box-sizing: boarder-box;
+  -webkit-bpx-sizing: boarder-box;
+  box-sizing: boarder-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: auto;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: TT Lakes;
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://ComRety.github.io/layoutOne/fonts/TTLakes-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: TT Lakes;
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://ComRety.github.io/layoutOne/fonts/TTLakes-Medium.woff") format("woff");
+}
+.header {
+  width: 100%;
+  height: 88px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.header__button-burger {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 24px;
+  left: 16px;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+.header__button-burger:hover,
+.header__button-checkstatus:hover,
+.header__button-repair:hover {
+  transform: scale(1.2);
+}
+
+.header__button-conteiner::after {
+  content: url("https://ComRety.github.io/layoutOne/icon/divider.svg");
+  position: absolute;
+  left: 115px;
+  top: 12px;
+}
+
+.header__button-conteiner {
+  position: absolute;
+  width: 96.5px;
+  height: 50.8px;
+  top: 17.6px;
+  left: 73px;
+}
+
+.header__button-repair {
+  transition: 1s;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 24px;
+  right: 70px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+
+.header__img-repair,
+.header__img-burger,
+.header__img-checkstatus {
+  border-radius: 20px;
+}
+
+.header__button-checkstatus {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 24px;
+  right: 15px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+.header__button-call,
+.header__button-chat,
+.header__button-profile {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header__button-call,
+  .header__button-chat,
+  .header__button-profile {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 24px;
+    border-radius: 20px;
+  }
+  .header__button-profile::after {
+    content: url("https://ComRety.github.io/layoutOne/icon/divider.svg");
+    position: absolute;
+    top: 5px;
+    left: 60px;
+  }
+  .header__button-conteiner::after {
+    display: none;
+  }
+  .header__button-conteiner::before {
+    content: url("https://ComRety.github.io/layoutOne/icon/divider.svg");
+    position: absolute;
+    top: 12px;
+    left: -15px;
+  }
+  .header__button-conteiner {
+    left: 90px;
+  }
+  .header__button-checkstatus {
+    right: 30px;
+  }
+  .header__button-repair {
+    right: 85px;
+  }
+  .header__button-call {
+    right: 275px;
+  }
+  .header__button-chat {
+    right: 220px;
+  }
+  .header__button-profile {
+    right: 165px;
+  }
+}
+@media (min-width: 1366px) {
+  .header {
+    display: none;
+  }
+}
 body {
-    color: black;
+  max-width: 100%;
+  background-color: #F8F8F8;
+}
+
+.flexbox-services-block {
+  position: relative;
+  display: flex;
+  overflow: auto;
+  top: 80px;
+  left: 15px;
+  width: 95%;
+}
+
+.flexbox-services-block::-webkit-scrollbar {
+  width: 0;
+}
+
+.flexbox-services-block {
+  -ms-overflow-style: none;
+}
+
+.flexbox-services-block {
+  overflow: -moz-scrollbars-none;
+}
+
+.flexbox-services-block__button-item {
+  background-color: #F8F8F8;
+  color: #7E7E82;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.flexbox-services-block__button-item:hover {
+  color: #FF3E79;
+}
+
+.flexbox-services-block__button-item_custom {
+  border-radius: 6px;
+  border: 2px solid #B8FFEC;
+  background-color: white;
+}
+
+.block-services__h1 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+}
+
+.block-services__h1::before {
+  content: url("https://ComRety.github.io/layoutOne/icon/highlight.svg");
+  position: absolute;
+  left: -15px;
+}
+
+.section-services {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+
+.section-description {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.block-item-one__in {
+  width: 90%;
+  margin: 0 5%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.block-item-one__p {
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+}
+
+.block-item-one_pre {
+  margin-top: 20px;
+}
+
+.block-item-one__button {
+  position: relative;
+  left: 6%;
+  margin-top: 10px;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  max-width: 100%;
+  background-color: transparent;
+}
+
+.block-item-one__button::before {
+  content: url("https://ComRety.github.io/layoutOne/icon/expand.svg");
+  position: relative;
+  top: 7px;
+  left: -5px;
+}
+
+.block-item-one__button:hover {
+  color: #FF3E79;
+}
+
+.block-item-two__img {
+  position: relative;
+  top: 30px;
+  width: 100%;
+}
+
+.block-item-two {
+  position: relative;
+  width: 100%;
+}
+
+.block-item-one__button-close {
+  position: relative;
+  left: 6%;
+  margin-top: 10px;
+  display: none;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  max-width: 100%;
+  background-color: transparent;
+}
+
+.block-item-one__button-close::before {
+  content: url("https://ComRety.github.io/layoutOne/icon/hide.svg");
+  position: relative;
+  top: 7px;
+  left: -5px;
+}
+
+.block-item-one__button-close:hover {
+  color: #FF3E79;
+}
+
+@media (min-width: 768px) {
+  .block-item-one__button,
+  .block-item-one__button-close {
+    left: 2%;
+  }
+  .section-description {
+    flex-direction: row;
+    width: 95%;
+    margin: 0 2.5%;
+  }
+  .block-item-two {
+    width: 50%;
+    margin: 0 0 0 6.5%;
+  }
+  .block-item-one__in {
+    width: 100%;
+    margin: 0;
+    height: 160px;
+  }
+  .block-item-one {
+    width: 43.5%;
+  }
+  .block-item-two__img {
+    top: 0;
+    border-radius: 8px;
+  }
+}
+.block-services__repair-span,
+.block-services__repair-button,
+.block-services__checkstatus-span,
+.block-services__checkstatus-button,
+.block-services__checkstatus-img,
+.block-services__repair-img {
+  display: none;
+}
+
+@media (min-width: 1366px) {
+  .block-services__h1 {
+    top: 50px;
+    left: 30px;
+  }
+  .flexbox-services-block {
+    top: 110px;
+    left: 30px;
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+  .section-description {
+    margin-bottom: 70px;
+    top: 70px;
+  }
+  .block-services__h1::before {
+    left: -30px;
+  }
+  .block-item-one {
+    width: 48%;
+  }
+  .block-item-two {
+    margin: 0 0 0 2%;
+    width: 50%;
+  }
+  .block-services__repair-span,
+  .block-services__checkstatus-span,
+  .block-services__repair-button,
+  .block-services__checkstatus-button,
+  .block-services__checkstatus-img,
+  .block-services__repair-img {
+    display: inline-block;
+  }
+  .block-services__repair-button,
+  .block-services__checkstatus-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50px;
+    border-radius: 20px;
+    transition: 1s;
+  }
+  .block-services__repair-button:hover,
+  .block-services__checkstatus-button:hover {
+    transform: scale(1.2);
+  }
+  .block-services__repair-img,
+  .block-services__checkstatus-img {
+    border-radius: 20px;
+  }
+  .block-services__checkstatus-button {
+    position: absolute;
+    right: 30px;
+  }
+  .block-services__checkstatus-span,
+  .block-services__repair-span {
+    color: #1B1C21;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    position: absolute;
+    top: 60px;
+  }
+  .block-services__checkstatus-span:hover,
+  .block-services__repair-span:hover {
+    color: #FF3E79;
+  }
+  .block-services__checkstatus-span {
+    right: 80px;
+  }
+  .block-services__repair-button {
+    right: 240px;
+  }
+  .block-services__repair-span {
+    right: 290px;
+  }
+}
+.popup-menu {
+  width: 260px;
+  padding: 3vh 30px;
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 21px 4px 28px rgba(0, 0, 0, 0.24);
+  background-color: rgb(255, 255, 255);
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.9);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.6s, visibility 0.6s;
+}
+
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+  list-style-type: none;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.nav__a {
+  color: #1B1C21;
+  display: block;
+  height: 33px;
+}
+
+.nav__a:hover {
+  color: #FF3E79;
+}
+
+.nav__a::before {
+  content: url("https://ComRety.github.io/layoutOne/icon/highlightMenu.svg");
+  position: relative;
+  left: -30px;
+  opacity: 0;
+}
+
+.nav__a:focus {
+  color: #7E7E82;
+}
+
+.nav__a:focus::before {
+  content: url("https://ComRety.github.io/layoutOne/icon/highlightMenu.svg");
+  position: relative;
+  left: -30px;
+  top: 5px;
+  opacity: 1;
+}
+
+.header-popup {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-popup__button-close {
+  margin-right: 15px;
+  background: none;
+  transition: 1s;
+}
+
+.header-popup__button-close:hover,
+.header-popup__button-search:hover {
+  transform: scale(1.2);
+}
+
+.header-popup__button-search {
+  margin-left: auto;
+  background: none;
+  transition: 1s;
+}
+
+.footer-popup {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.flex-block-footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.flex-block-footer__button-call,
+.flex-block-footer__button-chat,
+.flex-block-footer__button-profile {
+  background: none;
+  transition: 1s;
+}
+
+.flex-block-footer__button-call:hover,
+.flex-block-footer__button-chat:hover,
+.flex-block-footer__button-profile:hover {
+  transform: scale(1.2);
+}
+
+.footer-popup__mail {
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.footer-popup__mail:hover,
+.footer-popup__tel:hover,
+.lang-popup__span:hover {
+  color: #FF3E79;
+}
+
+.footer-popup__tel {
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+}
+
+.lang-popup {
+  margin-top: 20px;
+}
+
+.lang-popup__span {
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background-color: transparent;
+}
+
+@media (min-width: 1366px) {
+  .modal {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    transition: none;
+    width: auto;
+    height: auto;
+    background-color: white;
+  }
+  .all {
+    display: flex;
+  }
+  .popup-menu {
+    box-shadow: none;
+  }
+  .header-popup__button-close {
+    display: none;
+  }
+}
+.brands {
+  position: relative;
+  top: 30px;
+}
+
+.header-brands {
+  padding: 20px 3%;
+  background-image: linear-gradient(90deg, #F8F8F8 1.39%, #FFF 100%);
+}
+
+.swiper-slide {
+  width: auto !important;
+}
+
+.header-brands__span {
+  color: #7E7E82;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+}
+
+.slider-for-content {
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+  height: 72px;
+  width: 210px !important;
+  background-color: #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.swiper-container {
+  position: relative;
+  top: 20px;
+  width: 97%;
+  overflow: hidden;
+  left: 15px;
+}
+
+svg {
+  fill: white;
+  border-radius: 20px;
+}
+
+.swiper-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-image: url("https://ComRety.github.io/layoutOne/icon/go.svg");
+  background-color: transparent;
+  transition: 1s;
+}
+
+.swiper-button:hover {
+  transform: scale(1.2);
+}
+
+.swiper-pagination-bullet {
+  background-color: #DDDDDD;
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+  row-gap: 20px;
+  column-gap: 15px;
+  height: 170px;
+  overflow: hidden;
+}
+
+.swiper-container__all-brands {
+  position: relative;
+  left: 5px;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  display: none;
+  background-color: transparent;
+}
+
+.swiper-container__all-brands::before {
+  content: url("https://ComRety.github.io/layoutOne/icon/show.svg");
+  position: relative;
+  top: 5px;
+  left: -5px;
+}
+
+.swiper-container__all-brands:hover,
+.swiper-container__hide-brands:hover {
+  color: #FF3E79;
+}
+
+.swiper-container__hide-brands {
+  display: none;
+  position: relative;
+  left: 5px;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background-color: transparent;
+}
+
+.swiper-container__hide-brands::before {
+  content: url("https://ComRety.github.io/layoutOne/icon/hide.svg");
+  position: relative;
+  top: 5px;
+  left: -5px;
+}
+
+@media (max-width: 768px) {
+  .swiper-wrapper {
+    display: flex;
+    column-gap: 0;
+    margin-bottom: 40px;
+    height: auto;
+  }
+  .swiper-grid {
+    overflow: visible;
+  }
+  .swiper-pagination {
+    display: block;
+  }
+  .swiper-container__hide-brands,
+  .swiper-container__all-brands {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .swiper-container {
+    margin: 0 1%;
+    width: 98%;
+    left: 0;
+  }
+  .swiper-slide .slider-for-content {
+    width: auto !important;
+  }
+  .swiper-container__all-brands {
+    display: inline;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+}
+.technic {
+  position: relative;
+  top: 70px;
+}
+
+.header-technic {
+  padding: 20px 3%;
+  background-image: linear-gradient(90deg, #F8F8F8 1.39%, #FFF 100%);
+}
+
+.header-technic__span {
+  color: #7E7E82;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+}
+
+.technic-content {
+  width: 210px;
+  height: 130px;
+  flex-shrink: 0;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.swiper-button_technic {
+  align-self: flex-end;
+}
+
+.technic-text {
+  align-self: flex-start;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.grid-technic {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+  row-gap: 20px;
+  column-gap: 15px;
+  height: 170px;
+  overflow: hidden;
+}
+
+.swiper-container__all-technic {
+  position: relative;
+  left: 5px;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  display: none;
+  background-color: transparent;
+}
+
+.swiper-container__all-technic::before {
+  content: url("https://ComRety.github.io/layoutOne/icon/show.svg");
+  position: relative;
+  top: 5px;
+  left: -5px;
+}
+
+.swiper-container__hide-technic:hover,
+.swiper-container__all-technic:hover {
+  color: #FF3E79;
+}
+
+.swiper-container__hide-technic {
+  display: none;
+  position: relative;
+  left: 5px;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  background-color: transparent;
+}
+
+.swiper-container__hide-technic::before {
+  content: url("https://ComRety.github.io/layoutOne/icon/hide.svg");
+  position: relative;
+  top: 5px;
+  left: -5px;
+}
+
+@media (min-width: 768px) {
+  .technic-content {
+    width: auto;
+  }
+  .swiper-container__all-technic {
+    display: inline;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .swiper-wrapper {
+    display: flex;
+    column-gap: 0;
+    margin-bottom: 40px;
+    height: auto;
+  }
+  .grid-technic {
+    overflow: visible;
+  }
+  .swiper-pagination {
+    display: block;
+  }
+  .swiper-container__hide-technic,
+  .swiper-container__all-technic {
+    display: none !important;
+  }
+}
+.price-for-services {
+  position: relative;
+  margin-top: 100px;
+  height: auto;
+}
+
+.swiper-slide_hide {
+  display: none;
+}
+
+.price-content {
+  width: 220px;
+  height: 160px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #FFF;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.price-content-flex__button {
+  width: 119px;
+  height: 32px;
+  border-radius: 16px;
+  background-image: url("https://ComRety.github.io/layoutOne/icon/Group10.svg");
+  transition: 1s;
+}
+
+.price-content-flex__button:hover {
+  transform: scale(1.2);
+}
+
+.price-content__span {
+  color: #7E7E82;
+  font-family: "TT Lakes";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  opacity: 0.7218;
+}
+
+.price-content__span-hide {
+  color: #7E7E82;
+  font-family: "TT Lakes";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  opacity: 0.7218;
+}
+
+.price-content__par {
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  margin-top: 5px;
+}
+
+.price-content-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commerce {
+  position: absolute;
+  top: 340px;
+}
+
+.commerce__nds {
+  color: #1B1C21;
+  max-width: 80%;
+  font-family: "TT Lakes";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  margin: 0 20px 20px 20px;
+}
+
+.commerce__receive {
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 4px;
+  letter-spacing: -0.2px;
+  margin: 0 30px 0 20px;
+}
+
+.commerce__receive:hover {
+  color: #FF3E79;
+}
+
+.commerce__receive::after {
+  position: relative;
+  content: url("https://ComRety.github.io/layoutOne/icon/more.svg");
+  top: 10px;
+}
+
+@media (min-width: 768px) {
+  .price-content {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 0.6fr;
+    border-bottom: 1px solid #EAEAEA;
+  }
+  .swiper-slide_hide {
+    display: block;
+  }
+  .price-content_hide {
+    background-color: #F8F8F8;
+    border: none;
+  }
+  .price-content_last {
+    border: none;
+  }
+  .price-swiper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .price-content__span {
+    display: none;
+  }
+  .commerce {
+    top: 550px;
+  }
+  .commerce__nds {
+    max-width: 57%;
+    margin-bottom: 10px;
+  }
+}
+.footer {
+  position: relative;
+  margin-top: 250px;
+  border-top: 1px solid #D9FFF5;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+}
+
+.footer__par {
+  color: #7E7E82;
+  text-align: center;
+  font-family: "TT Lakes";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  opacity: 0.7218;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 200px;
+  }
+}
+.modal-order-call {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999999;
+  background-color: rgba(255, 255, 255, 0.9);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.6s, visibility 0.6s;
+}
+
+.order-menu {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 440px;
+  padding: 20px 15px;
+  height: 100vh;
+  box-shadow: 21px 4px 28px rgba(0, 0, 0, 0.24);
+  background-color: rgb(255, 255, 255);
+}
+
+.modal-order-call.order {
+  visibility: visible;
+  opacity: 1;
+}
+
+.order-menu__h2 {
+  position: relative;
+  top: 20px;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+}
+
+.order-menu__h2::before {
+  content: url("https://ComRety.github.io/layoutOne/icon/highlight.svg");
+  position: relative;
+  top: 10px;
+  left: -15px;
+}
+
+.order-menu__button-close {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-image: url("https://ComRety.github.io/layoutOne/icon/close.svg");
+  transition: 1s;
+}
+
+.order-menu__button-close:hover,
+.order-menu__button-send:hover {
+  transform: scale(1.2);
+}
+
+.order-menu__button-send {
+  transition: 1s;
+  width: 116px;
+  padding: 0 15px;
+  height: 32px;
+  border-radius: 16px;
+  background: #FF3E79;
+  background-image: url("https://ComRety.github.io/layoutOne/icon/goside.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  color: #FFF;
+  text-align: left;
+  font-family: "TT Lakes";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+
+.form-order {
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-order__tel {
+  width: auto;
+  padding: 0 15px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.form-order__tel::placeholder {
+  color: #B5B6BC;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+@media (min-width: 500px) {
+  .order-menu {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .order-menu__h2::before {
+    left: -25px;
+  }
+  .order-menu__button-close {
+    position: relative;
+    left: -80px;
+    top: 10px;
+  }
+  .order-menu__h2 {
+    top: -40px;
+  }
+  .form-order {
+    top: -10px;
+  }
+}
+.modal-call {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999999;
+  background-color: rgba(255, 255, 255, 0.9);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.6s, visibility 0.6s;
+}
+
+.modal-call.call {
+  visibility: visible;
+  opacity: 1;
+}
+
+.call-menu__h2 {
+  position: relative;
+  top: 20px;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+}
+
+.call-menu__h2::before {
+  content: url("https://ComRety.github.io/layoutOne/icon/highlight.svg");
+  position: relative;
+  top: 10px;
+  left: -15px;
+}
+
+.call-menu {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 440px;
+  padding: 20px 15px;
+  height: 100vh;
+  box-shadow: 21px 4px 28px rgba(0, 0, 0, 0.24);
+  background-color: rgb(255, 255, 255);
+}
+
+.call-menu__button-close {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-image: url("https://ComRety.github.io/layoutOne/icon/close.svg");
+  transition: 1s;
+}
+
+.call-menu__button-close:hover,
+.call-menu__button-send:hover {
+  transform: scale(1.2);
+}
+
+.call-menu__button-send {
+  transition: 1s;
+  width: 116px;
+  padding: 0 15px;
+  height: 32px;
+  border-radius: 16px;
+  background: #FF3E79;
+  background-image: url("https://ComRety.github.io/layoutOne/icon/goside.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  color: #FFF;
+  text-align: left;
+  font-family: "TT Lakes";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  align-self: flex-end;
+}
+
+.form-call__name,
+.form-call__tel,
+.form-call__mail {
+  width: auto;
+  padding: 0 15px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.form-call__name::placeholder,
+.form-call__tel::placeholder,
+.form-call__mail::placeholder,
+.form-call__message::placeholder {
+  color: #B5B6BC;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.form-call__message {
+  width: auto;
+  padding: 0 15px 60px 15px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.form-call__par {
+  color: #7E7E82;
+  font-family: "TT Lakes";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.form-call__a {
+  color: #FF3E79;
+  font-family: "TT Lakes";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.form-call {
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media (min-width: 500px) {
+  .call-menu {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .call-menu__h2::before {
+    left: -25px;
+  }
+  .call-menu__button-close {
+    position: relative;
+    left: -80px;
+    top: 10px;
+  }
+  .call-menu__h2 {
+    top: -40px;
+  }
+  .form-call {
+    top: -10px;
+  }
 }
