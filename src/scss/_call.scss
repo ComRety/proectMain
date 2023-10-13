@@ -29,7 +29,7 @@
 }
 
 .call-menu__h2::before {
-    content: url('https://ComRety.github.io/layoutOne/icon/highlight.svg');
+    content: url('/dist/icon/highlight.svg');
     position: relative;
     top: 10px;
     left: -15px;
@@ -51,7 +51,7 @@
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background-image: url('https://ComRety.github.io/layoutOne/icon/close.svg');
+    background-image: url('/dist/icon/close.svg');
     transition: 1s;
 }
 
@@ -67,7 +67,7 @@
     height: 32px;
     border-radius: 16px;
     background: #FF3E79;
-    background-image: url('https://ComRety.github.io/layoutOne/icon/goside.png');
+    background-image: url('/dist/icon/goside.png');
     background-repeat: no-repeat;
     background-position: right center;
     color: #FFF;

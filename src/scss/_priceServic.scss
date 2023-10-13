@@ -24,7 +24,7 @@
     width: 119px;
     height: 32px;
     border-radius: 16px;
-    background-image: url('https://ComRety.github.io/layoutOne/icon/Group10.svg');
+    background-image: url('/dist/icon/Group10.svg');
     transition: 1s;
 } 
 
@@ -102,7 +102,7 @@
 
 .commerce__receive::after {
     position: relative;
-    content: url('https://ComRety.github.io/layoutOne/icon/more.svg');
+    content: url('/dist/icon/more.svg');
     top: 10px;
 }
 

@@ -5,6 +5,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
+  resolve: {
+    modules: [path.resolve(__dirname, 'dist')]
+  },
+
     mode: 'development',
 
     entry: './src/js/index.js', 
@@ -50,12 +54,12 @@ module.exports = {
             use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
           },
           {
-            test: /\.(png|gif|jpg|svg)$/,
-            type: 'asset/resource'
+            test: /\.(svg|gif|jpg|png)$/,
+            type: 'asset/inline'
           },
           {
             test: /\.(ttf|woff|woff2|eot)$/,
-            type: 'asset/resource'
+            type: 'asset/inline'
           }
         ]
       },

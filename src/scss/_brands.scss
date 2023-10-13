@@ -54,7 +54,6 @@ svg {
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background-image: url('../icon/go.svg');
     background-color: transparent;
     transition: 1s;
 }
@@ -93,7 +92,7 @@ svg {
 }
 
 .swiper-container__all-brands::before {
-    content: url('https://ComRety.github.io/layoutOne/icon/show.svg');
+    content: url('/dist/icon/show.svg');
     position: relative;
     top: 5px;
     left: -5px;
@@ -119,7 +118,7 @@ svg {
 }
 
 .swiper-container__hide-brands::before {
-    content: url('https://ComRety.github.io/layoutOne/icon/hide.svg');
+    content: url('/dist/icon/hide.svg');
     position: relative;
     top: 5px;
     left: -5px;

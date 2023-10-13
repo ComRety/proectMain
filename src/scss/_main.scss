@@ -63,7 +63,7 @@ body {
 }
 
 .block-services__h1::before {
-    content: url('https://ComRety.github.io/layoutOne/icon/highlight.svg');
+    content: url('/dist/icon/highlight.svg');
     position: absolute;
     left: -15px;
 }
@@ -122,7 +122,7 @@ body {
 }
 
 .block-item-one__button::before {
-    content: url('https://ComRety.github.io/layoutOne/icon/expand.svg');
+    content: url('/dist/icon/expand.svg');
     position: relative;
     top: 7px;
     left: -5px;
@@ -161,7 +161,7 @@ body {
 }
 
 .block-item-one__button-close::before {
-    content: url('https://ComRety.github.io/layoutOne/icon/hide.svg');
+    content: url('/dist/icon/hide.svg');
     position: relative;
     top: 7px;
     left: -5px;
