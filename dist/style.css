@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__button-conteiner::after {
-  content: url("https://ComRety.github.io/layoutOne/icon/divider.svg");
+  content: url(94c3af3b43efd866e888.svg);
   position: absolute;
   left: 115px;
   top: 12px;
@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 20px;
   }
   .header__button-profile::after {
-    content: url("https://ComRety.github.io/layoutOne/icon/divider.svg");
+    content: url(94c3af3b43efd866e888.svg);
     position: absolute;
     top: 5px;
     left: 60px;
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   .header__button-conteiner::before {
-    content: url("https://ComRety.github.io/layoutOne/icon/divider.svg");
+    content: url(94c3af3b43efd866e888.svg);
     position: absolute;
     top: 12px;
     left: -15px;
@@ -737,7 +737,7 @@ svg {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background-image: url("https://ComRety.github.io/layoutOne/icon/go.svg");
+  background-image: url(9fb10ec3f1bffbf118aa.svg);
   background-color: transparent;
   transition: 1s;
 }
