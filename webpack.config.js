@@ -5,10 +5,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  resolve: {
-    modules: [path.resolve(__dirname, 'dist')]
-  },
-
     mode: 'development',
 
     entry: './src/js/index.js', 
