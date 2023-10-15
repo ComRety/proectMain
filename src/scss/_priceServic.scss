@@ -1,0 +1,148 @@
+.price-for-services {
+    position: relative;
+    margin-top: 100px;
+    height: auto;
+}
+
+.swiper-slide_hide {
+    display: none;
+}
+
+.price-content {
+    width: 220px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #FFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-content-flex__button {
+    width: 119px;
+    height: 32px;
+    border-radius: 16px;
+    background-image: url('/dist/icon/Group10.svg');
+    transition: 1s;
+} 
+
+.price-content-flex__button:hover {
+    transform: scale(1.2);
+}
+
+.price-content__span {
+    color: #7E7E82;
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+    opacity: 0.7218;
+}
+
+.price-content__span-hide {
+    color: #7E7E82;
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+    opacity: 0.7218;
+}
+
+.price-content__par {
+    color: #1B1C21;
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    margin-top: 5px;
+}
+
+.price-content-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.commerce {
+    position: absolute;
+    top: 340px;
+}
+
+.commerce__nds {
+    color: #1B1C21;
+    max-width: 80%;
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin: 0 20px 20px 20px;
+}
+
+.commerce__receive {
+    color: #1B1C21;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4px;
+    letter-spacing: -0.2px;
+    margin: 0 30px 0 20px;
+}
+
+.commerce__receive:hover {
+    color: #FF3E79;
+}
+
+.commerce__receive::after {
+    position: relative;
+    content: url('/dist/icon/more.svg');
+    top: 10px;
+}
+
+@media (min-width: 768px) {
+    .price-content {
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 0.3fr 0.6fr;
+        border-bottom: 1px solid #EAEAEA;
+    }
+
+    .swiper-slide_hide {
+        display: block;
+    }
+
+    .price-content_hide {
+        background-color: #F8F8F8;
+        border: none;
+    }
+
+    .price-content_last {
+        border: none;
+    }
+
+    .price-swiper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .price-content__span {
+        display: none;
+    }
+
+    .commerce {
+        top: 550px;
+    }
+
+    .commerce__nds {
+        max-width: 57%;
+        margin-bottom: 10px;
+    }
+}
