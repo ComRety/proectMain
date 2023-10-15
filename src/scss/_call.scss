@@ -1,3 +1,8 @@
+$colorPink: #FF3E79;
+$colorBlack: #1B1C21;
+$colorGray: #7E7E82;
+$colorWhite: #ffffff;
+
 .modal-call {
     position: fixed;
     left: 0;
@@ -16,25 +21,6 @@
     opacity: 1;
 }
 
-.call-menu__h2 {
-    position: relative;
-    top: 20px;
-    color: #1B1C21;
-    font-family: 'TT Lakes';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-    letter-spacing: -0.6px;
-}
-
-.call-menu__h2::before {
-    content: url('/dist/icon/highlight.svg');
-    position: relative;
-    top: 10px;
-    left: -15px;
-}
-
 .call-menu {
     box-sizing: border-box;
     position: absolute;
@@ -45,41 +31,60 @@
     height: 100vh;
     box-shadow: 21px 4px 28px rgba(0, 0, 0, 0.24);
     background-color: rgba(255, 255, 255, 1);
-}
 
-.call-menu__button-close {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-image: url('/dist/icon/close.svg');
-    transition: 1s;
-}
+    .call-menu__h2 {
+        position: relative;
+        top: 20px;
+        color: $colorBlack;
+        font-family: 'TT Lakes';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+    }
+    
+    .call-menu__h2::before {
+        content: url('https://ComRety.github.io/proectMain/dist/icon/highlight.svg');
+        position: relative;
+        top: 10px;
+        left: -15px;
+    }
 
-.call-menu__button-close:hover,
-.call-menu__button-send:hover {
+    .call-menu__button-close {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-image: url('https://ComRety.github.io/proectMain/dist/icon/close.svg');
+        transition: 1s;
+    }
+    
+    .call-menu__button-close:hover,
+    .call-menu__button-send:hover {
     transform: scale(1.2);
 }
 
-.call-menu__button-send {
-    transition: 1s;
-    width: 116px;
-    padding: 0 15px;
-    height: 32px;
-    border-radius: 16px;
-    background: #FF3E79;
-    background-image: url('/dist/icon/goside.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    color: #FFF;
-    text-align: left;
-    font-family: 'TT Lakes';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: -0.15px;
-    text-transform: uppercase;
-    align-self: flex-end;
+    .call-menu__button-send {
+        transition: 1s;
+        width: 116px;
+        padding: 0 15px;
+        height: 32px;
+        border-radius: 16px;
+        background: $colorPink;
+        background-image: url('https://ComRety.github.io/proectMain/dist/icon/goside.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        color: $colorWhite;
+        text-align: left;
+        font-family: 'TT Lakes';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.15px;
+        text-transform: uppercase;
+        align-self: flex-end;
+    }
 }
 
 .form-call__name,
@@ -91,9 +96,9 @@
     flex-shrink: 0;
     border-radius: 8px;
     border: 1px solid #EAEAEA;
-    background: #FFF;
+    background: $colorWhite;
 
-    color: #1B1C21;
+    color: $colorBlack;
     font-family: 'TT Lakes';
     font-size: 16px;
     font-style: normal;
@@ -122,8 +127,8 @@
     flex-shrink: 0;
     border-radius: 8px;
     border: 1px solid #EAEAEA;
-    background: #FFF;
-    color: #1B1C21;
+    background: $colorWhite;
+    color: $colorBlack;
     font-family: 'TT Lakes';
     font-size: 16px;
     font-style: normal;
@@ -133,7 +138,7 @@
 }
 
 .form-call__par {
-    color: #7E7E82;
+    color: $colorGray;
     font-family: 'TT Lakes';
     font-size: 14px;
     font-style: normal;
@@ -142,7 +147,7 @@
 }
 
 .form-call__a {
-    color: #FF3E79;
+    color: $colorPink;
     font-family: 'TT Lakes';
     font-size: 14px;
     font-style: normal;

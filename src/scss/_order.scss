@@ -1,3 +1,8 @@
+$colorPink: #FF3E79;
+$colorBlack: #1B1C21;
+$colorGray: #7E7E82;
+$colorWhite: #ffffff;
+
 .modal-order-call {
     position: fixed;
     left: 0;
@@ -21,65 +26,65 @@
     height: 100vh;
     box-shadow: 21px 4px 28px rgba(0, 0, 0, 0.24);
     background-color: rgba(255, 255, 255, 1);
+
+    .order-menu__h2 {
+        position: relative;
+        top: 20px;
+        color: $colorBlack;
+        font-family: 'TT Lakes';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+    }
+
+    .order-menu__h2::before {
+        content: url('https://ComRety.github.io/proectMain/dist/icon/highlight.svg');
+        position: relative;
+        top: 10px;
+        left: -15px;
+    }
+
+    .order-menu__button-close {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-image: url('https://ComRety.github.io/proectMain/dist/icon/close.svg');
+        transition: 1s;
+    }
+
+    .order-menu__button-close:hover,
+    .order-menu__button-send:hover {
+    transform: scale(1.2);
+    }
+
+    .order-menu__button-send {
+        transition: 1s;
+        width: 116px;
+        padding: 0 15px;
+        height: 32px;
+        border-radius: 16px;
+        background: $colorPink;
+        background-image: url('https://ComRety.github.io/proectMain/dist/icon/goside.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        color: $colorWhite;
+        text-align: left;
+        font-family: 'TT Lakes';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.15px;
+        text-transform: uppercase;
+        align-self: flex-end;
+    }
 }
 
 .modal-order-call.order {
     visibility: visible;
     opacity: 1;
-}
-
-.order-menu__h2 {
-    position: relative;
-    top: 20px;
-    color: #1B1C21;
-    font-family: 'TT Lakes';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-    letter-spacing: -0.6px;
-}
-
-.order-menu__h2::before {
-    content: url('/dist/icon/highlight.svg');
-    position: relative;
-    top: 10px;
-    left: -15px;
-}
-
-.order-menu__button-close {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-image: url('/dist/icon/close.svg');
-    transition: 1s;
-}
-
-.order-menu__button-close:hover,
-.order-menu__button-send:hover {
-    transform: scale(1.2);
-}
-
-.order-menu__button-send {
-    transition: 1s;
-    width: 116px;
-    padding: 0 15px;
-    height: 32px;
-    border-radius: 16px;
-    background: #FF3E79;
-    background-image: url('/dist/icon/goside.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    color: #FFF;
-    text-align: left;
-    font-family: 'TT Lakes';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: -0.15px;
-    text-transform: uppercase;
-    align-self: flex-end;
 }
 
 .form-order {
@@ -88,35 +93,37 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    .form-order__tel {
+        width: auto;
+        padding: 0 15px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: 1px solid #EAEAEA;
+        background: $colorWhite;
+    
+        color: $colorBlack;
+        font-family: 'TT Lakes';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+    }
+    
+    .form-order__tel::placeholder {
+        color: #B5B6BC;
+        font-family: 'TT Lakes';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; 
+        letter-spacing: -0.2px;
+    }
 }
 
-.form-order__tel {
-    width: auto;
-    padding: 0 15px;
-    height: 48px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    border: 1px solid #EAEAEA;
-    background: #FFF;
 
-    color: #1B1C21;
-    font-family: 'TT Lakes';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-}
-
-.form-order__tel::placeholder {
-    color: #B5B6BC;
-    font-family: 'TT Lakes';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; 
-    letter-spacing: -0.2px;
-}
 
 @media (min-width: 500px) {
     .order-menu {

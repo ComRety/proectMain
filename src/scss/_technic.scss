@@ -1,6 +1,15 @@
+$colorPink: #FF3E79;
+$colorBlack: #1B1C21;
+$colorGray: #7E7E82;
+$colorWhite: #ffffff;
+
 .technic {
     position: relative;
     top: 70px;
+}
+svg {
+    fill: $colorWhite;
+    border-radius: 20px;
 }
 
 .header-technic {
@@ -9,7 +18,7 @@
 }
 
 .header-technic__span {
-    color: #7E7E82;
+    color: $colorGray;
     font-family: 'TT Lakes';
     font-size: 16px;
     font-style: normal;
@@ -26,7 +35,7 @@
     padding: 15px;
     border-radius: 6px;
     border: 1px solid #EAEAEA;
-    background: #FFF;
+    background: $colorWhite;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -38,7 +47,7 @@
 
 .technic-text {
     align-self: flex-start;
-    color: #1B1C21;
+    color: $colorBlack;
     font-family: 'TT Lakes';
     font-size: 16px;
     font-style: normal;
@@ -59,7 +68,7 @@
 .swiper-container__all-technic {
     position: relative;
     left: 5px;
-    color: #1B1C21;
+    color: $colorBlack;
     font-family: 'TT Lakes';
     font-size: 16px;
     font-style: normal;
@@ -71,7 +80,7 @@
 }
 
 .swiper-container__all-technic::before {
-    content: url('/dist/icon/show.svg');
+    content: url('https://ComRety.github.io/proectMain/dist/icon/show.svg');
     position: relative;
     top: 5px;
     left: -5px;
@@ -79,14 +88,14 @@
 
 .swiper-container__hide-technic:hover,
 .swiper-container__all-technic:hover {
-    color: #FF3E79;
+    color: $colorPink;
 }
 
 .swiper-container__hide-technic {
     display: none;
     position: relative;
     left: 5px;
-    color: #1B1C21;
+    color: $colorBlack;
     font-family: 'TT Lakes';
     font-size: 16px;
     font-style: normal;
@@ -97,7 +106,7 @@
 }
 
 .swiper-container__hide-technic::before {
-    content: url('/dist/icon/hide.svg');
+    content: url('https://ComRety.github.io/proectMain/dist/icon/hide.svg');
     position: relative;
     top: 5px;
     left: -5px;

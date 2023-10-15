@@ -1,3 +1,8 @@
+$colorPink: #FF3E79;
+$colorBlack: #1B1C21;
+$colorGray: #7E7E82;
+$colorWhite: #ffffff;
+
 .price-for-services {
     position: relative;
     margin-top: 100px;
@@ -13,7 +18,7 @@
     height: 160px;
     flex-shrink: 0;
     border-radius: 6px;
-    background: #FFF;
+    background: $colorWhite;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -24,7 +29,7 @@
     width: 119px;
     height: 32px;
     border-radius: 16px;
-    background-image: url('/dist/icon/Group10.svg');
+    background-image: url('https://ComRety.github.io/proectMain/dist/icon/Group10.svg');
     transition: 1s;
 } 
 
@@ -33,7 +38,7 @@
 }
 
 .price-content__span {
-    color: #7E7E82;
+    color: $colorGray;
     font-family: 'TT Lakes';
     font-size: 14px;
     font-style: normal;
@@ -43,7 +48,7 @@
 }
 
 .price-content__span-hide {
-    color: #7E7E82;
+    color: $colorGray;
     font-family: 'TT Lakes';
     font-size: 14px;
     font-style: normal;
@@ -53,7 +58,7 @@
 }
 
 .price-content__par {
-    color: #1B1C21;
+    color: $colorBlack;
     font-family: 'TT Lakes';
     font-size: 14px;
     font-style: normal;
@@ -74,7 +79,7 @@
 }
 
 .commerce__nds {
-    color: #1B1C21;
+    color: $colorBlack;
     max-width: 80%;
     font-family: 'TT Lakes';
     font-size: 14px;
@@ -86,7 +91,7 @@
 }
 
 .commerce__receive {
-    color: #1B1C21;
+    color: $colorBlack;
     font-family: 'TT Lakes';
     font-size: 16px;
     font-style: normal;
@@ -97,12 +102,12 @@
 }
 
 .commerce__receive:hover {
-    color: #FF3E79;
+    color: $colorPink;
 }
 
 .commerce__receive::after {
     position: relative;
-    content: url('/dist/icon/more.svg');
+    content: url('https://ComRety.github.io/proectMain/dist/icon/more.svg');
     top: 10px;
 }
 

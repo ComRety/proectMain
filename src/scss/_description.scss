@@ -1,0 +1,156 @@
+$colorPink: #FF3E79;
+$colorBlack: #1B1C21;
+$colorGray: #7E7E82;
+$colorWhite: #ffffff;
+
+body {
+    max-width: 100%;
+    background-color: #F8F8F8;
+}
+
+.section-description {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.block-item-one__in {
+    width: 90%;
+    margin: 0 5%;
+    height: 100px;
+    overflow: hidden;
+}
+
+
+.block-item-one__p {
+    color: $colorBlack;
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.block-item-one_pre {
+    margin-top: 20px;
+}
+
+.block-item-one__button {
+    position: relative;
+    left: 6%;
+    margin-top: 10px;
+
+    color: $colorBlack;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: -0.2px;
+    max-width: 100%;
+    background-color: transparent;
+}
+
+.block-item-one__button::before {
+    content: url('https://ComRety.github.io/proectMain/dist/icon/expand.svg');
+    position: relative;
+    top: 7px;
+    left: -5px;
+}
+
+.block-item-one__button:hover {
+    color: $colorPink;
+}
+
+.block-item-two__img {
+    position: relative;
+    top: 30px;
+    width: 100%;
+}
+
+.block-item-two {
+    position: relative;
+    width: 100%;
+}
+
+.block-item-one__button-close {
+    position: relative;
+    left: 6%;
+    margin-top: 10px;
+    display: none;
+
+    color: $colorBlack;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: -0.2px;
+    max-width: 100%;
+    background-color: transparent;
+}
+
+.block-item-one__button-close::before {
+    content: url('https://ComRety.github.io/proectMain/dist/icon/hide.svg');
+    position: relative;
+    top: 7px;
+    left: -5px;
+}
+
+.block-item-one__button-close:hover {
+    color: $colorPink;
+}
+
+@media (min-width: 768px) {
+
+    .block-item-one__button,
+    .block-item-one__button-close {
+        left: 2%;
+    }
+
+    .section-description {
+        flex-direction: row;
+        width: 95%;
+        margin: 0 2.5%;
+    }
+
+    .block-item-two {
+        width: 50%;
+        margin: 0 0 0 6.5%;
+    }
+    
+    .block-item-one__in {
+        width: 100%;
+        margin: 0;
+        height: 160px;
+    }
+
+    .block-item-one {
+        width: 43.5%;
+    }
+
+    .block-item-two__img {
+        top: 0;
+        border-radius: 8px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .section-description {
+        margin-bottom: 70px;
+        top: 70px;
+    }
+
+    .block-item-one {
+        width: 48%;
+    }
+
+    .block-item-two {
+        margin: 0 0 0 2%;
+        width: 50%;
+    }
+}

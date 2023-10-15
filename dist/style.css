@@ -93,11 +93,10 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   width: 100%;
   height: 88px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: relative;
 }
-
-.header__button-burger {
+.header .header__button-burger {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -105,6 +104,33 @@ h1, h2, h3, h4, h5, h6 {
   left: 16px;
   border-radius: 20px;
   transition: 1s;
+}
+.header .header__button-conteiner {
+  position: absolute;
+  width: 96.5px;
+  height: 50.8px;
+  top: 17.6px;
+  left: 73px;
+}
+.header .header__button-checkstatus {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 24px;
+  right: 15px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  transition: 1s;
+}
+.header .header__button-repair {
+  transition: 1s;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 24px;
+  right: 70px;
+  background-color: #ffffff;
+  border-radius: 20px;
 }
 
 .header__button-burger:hover,
@@ -114,46 +140,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__button-conteiner::after {
-  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDIgMzIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cmVjdCB3aWR0aD0iMiIgaGVpZ2h0PSIzMiIgcng9IjEiIGZpbGw9IiNFQUVBRUEiLz4NCjwvc3ZnPg0K);
+  content: url("https://ComRety.github.io/proectMain/dist/icon/divider.svg");
   position: absolute;
   left: 115px;
   top: 12px;
-}
-
-.header__button-conteiner {
-  position: absolute;
-  width: 96.5px;
-  height: 50.8px;
-  top: 17.6px;
-  left: 73px;
-}
-
-.header__button-repair {
-  transition: 1s;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 24px;
-  right: 70px;
-  background-color: #FFFFFF;
-  border-radius: 20px;
 }
 
 .header__img-repair,
 .header__img-burger,
 .header__img-checkstatus {
   border-radius: 20px;
-}
-
-.header__button-checkstatus {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 24px;
-  right: 15px;
-  background-color: #FFFFFF;
-  border-radius: 20px;
-  transition: 1s;
 }
 
 .header__button-call,
@@ -174,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 20px;
   }
   .header__button-profile::after {
-    content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDIgMzIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cmVjdCB3aWR0aD0iMiIgaGVpZ2h0PSIzMiIgcng9IjEiIGZpbGw9IiNFQUVBRUEiLz4NCjwvc3ZnPg0K);
+    content: url("https://ComRety.github.io/proectMain/dist/icon/divider.svg");
     position: absolute;
     top: 5px;
     left: 60px;
@@ -183,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   .header__button-conteiner::before {
-    content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDIgMzIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cmVjdCB3aWR0aD0iMiIgaGVpZ2h0PSIzMiIgcng9IjEiIGZpbGw9IiNFQUVBRUEiLz4NCjwvc3ZnPg0K);
+    content: url("https://ComRety.github.io/proectMain/dist/icon/divider.svg");
     position: absolute;
     top: 12px;
     left: -15px;
@@ -215,76 +211,6 @@ h1, h2, h3, h4, h5, h6 {
 body {
   max-width: 100%;
   background-color: #F8F8F8;
-}
-
-.flexbox-services-block {
-  position: relative;
-  display: flex;
-  overflow: auto;
-  top: 80px;
-  left: 15px;
-  width: 95%;
-}
-
-.flexbox-services-block::-webkit-scrollbar {
-  width: 0;
-}
-
-.flexbox-services-block {
-  -ms-overflow-style: none;
-}
-
-.flexbox-services-block {
-  overflow: -moz-scrollbars-none;
-}
-
-.flexbox-services-block__button-item {
-  background-color: #F8F8F8;
-  color: #7E7E82;
-  font-family: "TT Lakes";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  white-space: nowrap;
-  padding: 10px 20px;
-  display: inline-block;
-}
-
-.flexbox-services-block__button-item:hover {
-  color: #FF3E79;
-}
-
-.flexbox-services-block__button-item_custom {
-  border-radius: 6px;
-  border: 2px solid #B8FFEC;
-  background-color: white;
-}
-
-.block-services__h1 {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  color: #1B1C21;
-  font-family: "TT Lakes";
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: -0.6px;
-}
-
-.block-services__h1::before {
-  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQgNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBpZD0iaGlnaGxpZ2h0IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTQgNEM0IDEuNzkwODYgMi4yMDkxNCAwIDAgMFY0MEMyLjIwOTE0IDQwIDQgMzguMjA5MSA0IDM2VjRaIiBmaWxsPSIjNDFGNkQ3Ii8+DQo8L3N2Zz4NCg==);
-  position: absolute;
-  left: -15px;
-}
-
-.section-services {
-  position: relative;
-  width: 100%;
-  height: 150px;
 }
 
 .section-description {
@@ -333,7 +259,7 @@ body {
 }
 
 .block-item-one__button::before {
-  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxnIGlkPSJpYy9leHBhbmQiPg0KPHBhdGggaWQ9Imljb24iIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTQuNTAwMSA3LjUwMDA4TDEyLjAwMDEgMTAuMDAwMUw5LjUwMDA4IDcuNTAwMDhDOS4yMjM5MyA3LjIyMzkzIDguNzc2MjIgNy4yMjM5MyA4LjUwMDA4IDcuNTAwMDhDOC4yMjM5MyA3Ljc3NjIyIDguMjIzOTMgOC4yMjM5MyA4LjUwMDA4IDguNTAwMDhMMTEuMjkzIDExLjI5M0MxMS42ODM1IDExLjY4MzUgMTIuMzE2NyAxMS42ODM1IDEyLjcwNzIgMTEuMjkzTDE1LjUwMDEgOC41MDAwOEMxNS43NzYyIDguMjIzOTMgMTUuNzc2MiA3Ljc3NjIyIDE1LjUwMDEgNy41MDAwOEMxNS4yMjM5IDcuMjIzOTMgMTQuNzc2MiA3LjIyMzkzIDE0LjUwMDEgNy41MDAwOFpNMTQuNTAwMSAxMy41MDAxTDEyLjAwMDEgMTYuMDAwMUw5LjUwMDA4IDEzLjUwMDFDOS4yMjM5MyAxMy4yMjM5IDguNzc2MjIgMTMuMjIzOSA4LjUwMDA4IDEzLjUwMDFDOC4yMjM5MyAxMy43NzYyIDguMjIzOTMgMTQuMjIzOSA4LjUwMDA4IDE0LjUwMDFMMTEuMjkzIDE3LjI5M0MxMS42ODM1IDE3LjY4MzUgMTIuMzE2NyAxNy42ODM1IDEyLjcwNzIgMTcuMjkzTDE1LjUwMDEgMTQuNTAwMUMxNS43NzYyIDE0LjIyMzkgMTUuNzc2MiAxMy43NzYyIDE1LjUwMDEgMTMuNTAwMUMxNS4yMjM5IDEzLjIyMzkgMTQuNzc2MiAxMy4yMjM5IDE0LjUwMDEgMTMuNTAwMVoiIGZpbGw9IiM0MUY2RDciLz4NCjwvZz4NCjwvc3ZnPg0K);
+  content: url("https://ComRety.github.io/proectMain/dist/icon/expand.svg");
   position: relative;
   top: 7px;
   left: -5px;
@@ -371,7 +297,7 @@ body {
 }
 
 .block-item-one__button-close::before {
-  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxnIGlkPSJpYy9leHBhbmQiPg0KPHBhdGggaWQ9Imljb24iIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNOS40OTk5MiAxNi40OTk5TDExLjk5OTkgMTMuOTk5OUwxNC40OTk5IDE2LjQ5OTlDMTQuNzc2MSAxNi43NzYxIDE1LjIyMzggMTYuNzc2MSAxNS40OTk5IDE2LjQ5OTlDMTUuNzc2MSAxNi4yMjM4IDE1Ljc3NjEgMTUuNzc2MSAxNS40OTk5IDE1LjQ5OTlMMTIuNzA3IDEyLjcwN0MxMi4zMTY1IDEyLjMxNjUgMTEuNjgzMyAxMi4zMTY1IDExLjI5MjggMTIuNzA3TDguNDk5OTIgMTUuNDk5OUM4LjIyMzc4IDE1Ljc3NjEgOC4yMjM3OCAxNi4yMjM4IDguNDk5OTIgMTYuNDk5OUM4Ljc3NjA3IDE2Ljc3NjEgOS4yMjM3OCAxNi43NzYxIDkuNDk5OTIgMTYuNDk5OVpNOS40OTk5MiAxMC40OTk5TDExLjk5OTkgNy45OTk5MkwxNC40OTk5IDEwLjQ5OTlDMTQuNzc2MSAxMC43NzYxIDE1LjIyMzggMTAuNzc2MSAxNS40OTk5IDEwLjQ5OTlDMTUuNzc2MSAxMC4yMjM4IDE1Ljc3NjEgOS43NzYwNyAxNS40OTk5IDkuNDk5OTJMMTIuNzA3IDYuNzA3MDNDMTIuMzE2NSA2LjMxNjUxIDExLjY4MzMgNi4zMTY1MSAxMS4yOTI4IDYuNzA3MDNMOC40OTk5MiA5LjQ5OTkzQzguMjIzNzggOS43NzYwNyA4LjIyMzc4IDEwLjIyMzggOC40OTk5MiAxMC40OTk5QzguNzc2MDcgMTAuNzc2MSA5LjIyMzc4IDEwLjc3NjEgOS40OTk5MiAxMC40OTk5WiIgZmlsbD0iIzQxRjZENyIvPg0KPC9nPg0KPC9zdmc+DQo=);
+  content: url("https://ComRety.github.io/proectMain/dist/icon/hide.svg");
   position: relative;
   top: 7px;
   left: -5px;
@@ -408,32 +334,10 @@ body {
     border-radius: 8px;
   }
 }
-.block-services__repair-span,
-.block-services__repair-button,
-.block-services__checkstatus-span,
-.block-services__checkstatus-button,
-.block-services__checkstatus-img,
-.block-services__repair-img {
-  display: none;
-}
-
 @media (min-width: 1366px) {
-  .block-services__h1 {
-    top: 50px;
-    left: 30px;
-  }
-  .flexbox-services-block {
-    top: 110px;
-    left: 30px;
-    flex-wrap: wrap;
-    overflow: visible;
-  }
   .section-description {
     margin-bottom: 70px;
     top: 70px;
-  }
-  .block-services__h1::before {
-    left: -30px;
   }
   .block-item-one {
     width: 48%;
@@ -442,72 +346,7 @@ body {
     margin: 0 0 0 2%;
     width: 50%;
   }
-  .block-services__repair-span,
-  .block-services__checkstatus-span,
-  .block-services__repair-button,
-  .block-services__checkstatus-button,
-  .block-services__checkstatus-img,
-  .block-services__repair-img {
-    display: inline-block;
-  }
-  .block-services__repair-button,
-  .block-services__checkstatus-button {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 50px;
-    border-radius: 20px;
-    transition: 1s;
-  }
-  .block-services__repair-button:hover,
-  .block-services__checkstatus-button:hover {
-    transform: scale(1.2);
-  }
-  .block-services__repair-img,
-  .block-services__checkstatus-img {
-    border-radius: 20px;
-  }
-  .block-services__checkstatus-button {
-    position: absolute;
-    right: 30px;
-  }
-  .block-services__checkstatus-span,
-  .block-services__repair-span {
-    color: #1B1C21;
-    font-family: TT Lakes;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    position: absolute;
-    top: 60px;
-  }
-  .block-services__checkstatus-span:hover,
-  .block-services__repair-span:hover {
-    color: #FF3E79;
-  }
-  .block-services__checkstatus-span {
-    right: 80px;
-  }
-  .block-services__repair-button {
-    right: 240px;
-  }
-  .block-services__repair-span {
-    right: 290px;
-  }
 }
-.popup-menu {
-  width: 260px;
-  padding: 3vh 30px;
-  height: 94vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 21px 4px 28px rgba(0, 0, 0, 0.24);
-  background-color: rgb(255, 255, 255);
-}
-
 .modal {
   position: fixed;
   left: 0;
@@ -526,6 +365,17 @@ body {
   opacity: 1;
 }
 
+.popup-menu {
+  width: 260px;
+  padding: 3vh 30px;
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 21px 4px 28px rgba(0, 0, 0, 0.24);
+  background-color: rgb(255, 255, 255);
+}
+
 .nav {
   display: flex;
   flex-direction: column;
@@ -540,30 +390,25 @@ body {
   line-height: 24px;
   letter-spacing: -0.2px;
 }
-
-.nav__a {
+.nav .nav__a {
   color: #1B1C21;
   display: block;
   height: 33px;
 }
-
-.nav__a:hover {
+.nav .nav__a:hover {
   color: #FF3E79;
 }
-
-.nav__a::before {
-  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNCIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDQgMzIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBpZD0iaGlnaGxpZ2h0IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTQgNEM0IDEuNzkwODYgMi4yMDkxNCAwIDAgMFYzMkMyLjIwOTE0IDMyIDQgMzAuMjA5MSA0IDI4VjRaIiBmaWxsPSIjNDFGNkQ3Ii8+DQo8L3N2Zz4NCg==);
+.nav .nav__a::before {
+  content: url("https://ComRety.github.io/proectMain/dist/icon/highlightMenu.svg");
   position: relative;
   left: -30px;
   opacity: 0;
 }
-
-.nav__a:focus {
+.nav .nav__a:focus {
   color: #7E7E82;
 }
-
-.nav__a:focus::before {
-  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNCIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDQgMzIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBpZD0iaGlnaGxpZ2h0IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTQgNEM0IDEuNzkwODYgMi4yMDkxNCAwIDAgMFYzMkMyLjIwOTE0IDMyIDQgMzAuMjA5MSA0IDI4VjRaIiBmaWxsPSIjNDFGNkQ3Ii8+DQo8L3N2Zz4NCg==);
+.nav .nav__a:focus::before {
+  content: url("https://ComRety.github.io/proectMain/dist/icon/highlightMenu.svg");
   position: relative;
   left: -30px;
   top: 5px;
@@ -576,19 +421,16 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
-
-.header-popup__button-close {
+.header-popup .header-popup__button-close {
   margin-right: 15px;
   background: none;
   transition: 1s;
 }
-
-.header-popup__button-close:hover,
-.header-popup__button-search:hover {
+.header-popup .header-popup__button-close:hover,
+.header-popup .header-popup__button-search:hover {
   transform: scale(1.2);
 }
-
-.header-popup__button-search {
+.header-popup .header-popup__button-search {
   margin-left: auto;
   background: none;
   transition: 1s;
@@ -607,17 +449,15 @@ body {
   justify-content: flex-start;
   gap: 15px;
 }
-
-.flex-block-footer__button-call,
-.flex-block-footer__button-chat,
-.flex-block-footer__button-profile {
+.flex-block-footer .flex-block-footer__button-call,
+.flex-block-footer .flex-block-footer__button-chat,
+.flex-block-footer .flex-block-footer__button-profile {
   background: none;
   transition: 1s;
 }
-
-.flex-block-footer__button-call:hover,
-.flex-block-footer__button-chat:hover,
-.flex-block-footer__button-profile:hover {
+.flex-block-footer .flex-block-footer__button-call:hover,
+.flex-block-footer .flex-block-footer__button-chat:hover,
+.flex-block-footer .flex-block-footer__button-profile:hover {
   transform: scale(1.2);
 }
 
@@ -650,8 +490,7 @@ body {
 .lang-popup {
   margin-top: 20px;
 }
-
-.lang-popup__span {
+.lang-popup .lang-popup__span {
   color: #1B1C21;
   font-family: "TT Lakes";
   font-size: 16px;
@@ -670,7 +509,7 @@ body {
     transition: none;
     width: auto;
     height: auto;
-    background-color: white;
+    background-color: #ffffff;
   }
   .all {
     display: flex;
@@ -691,12 +530,7 @@ body {
   padding: 20px 3%;
   background-image: linear-gradient(90deg, #F8F8F8 1.39%, #FFF 100%);
 }
-
-.swiper-slide {
-  width: auto !important;
-}
-
-.header-brands__span {
+.header-brands .header-brands__span {
   color: #7E7E82;
   font-family: "TT Lakes";
   font-size: 16px;
@@ -727,10 +561,8 @@ body {
   overflow: hidden;
   left: 15px;
 }
-
-svg {
-  fill: white;
-  border-radius: 20px;
+.swiper-container .swiper-slide {
+  width: auto !important;
 }
 
 .swiper-button {
@@ -775,7 +607,7 @@ svg {
 }
 
 .swiper-container__all-brands::before {
-  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxnIGlkPSJpYy9leHBhbmQiPg0KPHBhdGggaWQ9Imljb24iIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTQuNTAwMSA3LjUwMDA4TDEyLjAwMDEgMTAuMDAwMUw5LjUwMDA4IDcuNTAwMDhDOS4yMjM5MyA3LjIyMzkzIDguNzc2MjIgNy4yMjM5MyA4LjUwMDA4IDcuNTAwMDhDOC4yMjM5MyA3Ljc3NjIyIDguMjIzOTMgOC4yMjM5MyA4LjUwMDA4IDguNTAwMDhMMTEuMjkzIDExLjI5M0MxMS42ODM1IDExLjY4MzUgMTIuMzE2NyAxMS42ODM1IDEyLjcwNzIgMTEuMjkzTDE1LjUwMDEgOC41MDAwOEMxNS43NzYyIDguMjIzOTMgMTUuNzc2MiA3Ljc3NjIyIDE1LjUwMDEgNy41MDAwOEMxNS4yMjM5IDcuMjIzOTMgMTQuNzc2MiA3LjIyMzkzIDE0LjUwMDEgNy41MDAwOFpNMTQuNTAwMSAxMy41MDAxTDEyLjAwMDEgMTYuMDAwMUw5LjUwMDA4IDEzLjUwMDFDOS4yMjM5MyAxMy4yMjM5IDguNzc2MjIgMTMuMjIzOSA4LjUwMDA4IDEzLjUwMDFDOC4yMjM5MyAxMy43NzYyIDguMjIzOTMgMTQuMjIzOSA4LjUwMDA4IDE0LjUwMDFMMTEuMjkzIDE3LjI5M0MxMS42ODM1IDE3LjY4MzUgMTIuMzE2NyAxNy42ODM1IDEyLjcwNzIgMTcuMjkzTDE1LjUwMDEgMTQuNTAwMUMxNS43NzYyIDE0LjIyMzkgMTUuNzc2MiAxMy43NzYyIDE1LjUwMDEgMTMuNTAwMUMxNS4yMjM5IDEzLjIyMzkgMTQuNzc2MiAxMy4yMjM5IDE0LjUwMDEgMTMuNTAwMVoiIGZpbGw9IiM0MUY2RDciLz4NCjwvZz4NCjwvc3ZnPg0K);
+  content: url("https://ComRety.github.io/proectMain/dist/icon/show.svg");
   position: relative;
   top: 5px;
   left: -5px;
@@ -801,7 +633,7 @@ svg {
 }
 
 .swiper-container__hide-brands::before {
-  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxnIGlkPSJpYy9leHBhbmQiPg0KPHBhdGggaWQ9Imljb24iIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNOS40OTk5MiAxNi40OTk5TDExLjk5OTkgMTMuOTk5OUwxNC40OTk5IDE2LjQ5OTlDMTQuNzc2MSAxNi43NzYxIDE1LjIyMzggMTYuNzc2MSAxNS40OTk5IDE2LjQ5OTlDMTUuNzc2MSAxNi4yMjM4IDE1Ljc3NjEgMTUuNzc2MSAxNS40OTk5IDE1LjQ5OTlMMTIuNzA3IDEyLjcwN0MxMi4zMTY1IDEyLjMxNjUgMTEuNjgzMyAxMi4zMTY1IDExLjI5MjggMTIuNzA3TDguNDk5OTIgMTUuNDk5OUM4LjIyMzc4IDE1Ljc3NjEgOC4yMjM3OCAxNi4yMjM4IDguNDk5OTIgMTYuNDk5OUM4Ljc3NjA3IDE2Ljc3NjEgOS4yMjM3OCAxNi43NzYxIDkuNDk5OTIgMTYuNDk5OVpNOS40OTk5MiAxMC40OTk5TDExLjk5OTkgNy45OTk5MkwxNC40OTk5IDEwLjQ5OTlDMTQuNzc2MSAxMC43NzYxIDE1LjIyMzggMTAuNzc2MSAxNS40OTk5IDEwLjQ5OTlDMTUuNzc2MSAxMC4yMjM4IDE1Ljc3NjEgOS43NzYwNyAxNS40OTk5IDkuNDk5OTJMMTIuNzA3IDYuNzA3MDNDMTIuMzE2NSA2LjMxNjUxIDExLjY4MzMgNi4zMTY1MSAxMS4yOTI4IDYuNzA3MDNMOC40OTk5MiA5LjQ5OTkzQzguMjIzNzggOS43NzYwNyA4LjIyMzc4IDEwLjIyMzggOC40OTk5MiAxMC40OTk5QzguNzc2MDcgMTAuNzc2MSA5LjIyMzc4IDEwLjc3NjEgOS40OTk5MiAxMC40OTk5WiIgZmlsbD0iIzQxRjZENyIvPg0KPC9nPg0KPC9zdmc+DQo=);
+  content: url("https://ComRety.github.io/proectMain /dist/icon/hide.svg");
   position: relative;
   top: 5px;
   left: -5px;
@@ -846,6 +678,11 @@ svg {
   top: 70px;
 }
 
+svg {
+  fill: #ffffff;
+  border-radius: 20px;
+}
+
 .header-technic {
   padding: 20px 3%;
   background-image: linear-gradient(90deg, #F8F8F8 1.39%, #FFF 100%);
@@ -869,7 +706,7 @@ svg {
   padding: 15px;
   border-radius: 6px;
   border: 1px solid #EAEAEA;
-  background: #FFF;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -914,7 +751,7 @@ svg {
 }
 
 .swiper-container__all-technic::before {
-  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxnIGlkPSJpYy9leHBhbmQiPg0KPHBhdGggaWQ9Imljb24iIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTQuNTAwMSA3LjUwMDA4TDEyLjAwMDEgMTAuMDAwMUw5LjUwMDA4IDcuNTAwMDhDOS4yMjM5MyA3LjIyMzkzIDguNzc2MjIgNy4yMjM5MyA4LjUwMDA4IDcuNTAwMDhDOC4yMjM5MyA3Ljc3NjIyIDguMjIzOTMgOC4yMjM5MyA4LjUwMDA4IDguNTAwMDhMMTEuMjkzIDExLjI5M0MxMS42ODM1IDExLjY4MzUgMTIuMzE2NyAxMS42ODM1IDEyLjcwNzIgMTEuMjkzTDE1LjUwMDEgOC41MDAwOEMxNS43NzYyIDguMjIzOTMgMTUuNzc2MiA3Ljc3NjIyIDE1LjUwMDEgNy41MDAwOEMxNS4yMjM5IDcuMjIzOTMgMTQuNzc2MiA3LjIyMzkzIDE0LjUwMDEgNy41MDAwOFpNMTQuNTAwMSAxMy41MDAxTDEyLjAwMDEgMTYuMDAwMUw5LjUwMDA4IDEzLjUwMDFDOS4yMjM5MyAxMy4yMjM5IDguNzc2MjIgMTMuMjIzOSA4LjUwMDA4IDEzLjUwMDFDOC4yMjM5MyAxMy43NzYyIDguMjIzOTMgMTQuMjIzOSA4LjUwMDA4IDE0LjUwMDFMMTEuMjkzIDE3LjI5M0MxMS42ODM1IDE3LjY4MzUgMTIuMzE2NyAxNy42ODM1IDEyLjcwNzIgMTcuMjkzTDE1LjUwMDEgMTQuNTAwMUMxNS43NzYyIDE0LjIyMzkgMTUuNzc2MiAxMy43NzYyIDE1LjUwMDEgMTMuNTAwMUMxNS4yMjM5IDEzLjIyMzkgMTQuNzc2MiAxMy4yMjM5IDE0LjUwMDEgMTMuNTAwMVoiIGZpbGw9IiM0MUY2RDciLz4NCjwvZz4NCjwvc3ZnPg0K);
+  content: url("https://ComRety.github.io/proectMain/dist/icon/show.svg");
   position: relative;
   top: 5px;
   left: -5px;
@@ -940,7 +777,7 @@ svg {
 }
 
 .swiper-container__hide-technic::before {
-  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxnIGlkPSJpYy9leHBhbmQiPg0KPHBhdGggaWQ9Imljb24iIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNOS40OTk5MiAxNi40OTk5TDExLjk5OTkgMTMuOTk5OUwxNC40OTk5IDE2LjQ5OTlDMTQuNzc2MSAxNi43NzYxIDE1LjIyMzggMTYuNzc2MSAxNS40OTk5IDE2LjQ5OTlDMTUuNzc2MSAxNi4yMjM4IDE1Ljc3NjEgMTUuNzc2MSAxNS40OTk5IDE1LjQ5OTlMMTIuNzA3IDEyLjcwN0MxMi4zMTY1IDEyLjMxNjUgMTEuNjgzMyAxMi4zMTY1IDExLjI5MjggMTIuNzA3TDguNDk5OTIgMTUuNDk5OUM4LjIyMzc4IDE1Ljc3NjEgOC4yMjM3OCAxNi4yMjM4IDguNDk5OTIgMTYuNDk5OUM4Ljc3NjA3IDE2Ljc3NjEgOS4yMjM3OCAxNi43NzYxIDkuNDk5OTIgMTYuNDk5OVpNOS40OTk5MiAxMC40OTk5TDExLjk5OTkgNy45OTk5MkwxNC40OTk5IDEwLjQ5OTlDMTQuNzc2MSAxMC43NzYxIDE1LjIyMzggMTAuNzc2MSAxNS40OTk5IDEwLjQ5OTlDMTUuNzc2MSAxMC4yMjM4IDE1Ljc3NjEgOS43NzYwNyAxNS40OTk5IDkuNDk5OTJMMTIuNzA3IDYuNzA3MDNDMTIuMzE2NSA2LjMxNjUxIDExLjY4MzMgNi4zMTY1MSAxMS4yOTI4IDYuNzA3MDNMOC40OTk5MiA5LjQ5OTkzQzguMjIzNzggOS43NzYwNyA4LjIyMzc4IDEwLjIyMzggOC40OTk5MiAxMC40OTk5QzguNzc2MDcgMTAuNzc2MSA5LjIyMzc4IDEwLjc3NjEgOS40OTk5MiAxMC40OTk5WiIgZmlsbD0iIzQxRjZENyIvPg0KPC9nPg0KPC9zdmc+DQo=);
+  content: url("https://ComRety.github.io/proectMain/dist/icon/hide.svg");
   position: relative;
   top: 5px;
   left: -5px;
@@ -990,7 +827,7 @@ svg {
   height: 160px;
   flex-shrink: 0;
   border-radius: 6px;
-  background: #FFF;
+  background: #ffffff;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -1001,7 +838,7 @@ svg {
   width: 119px;
   height: 32px;
   border-radius: 16px;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE5IiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMTE5IDMyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KPHJlY3Qgd2lkdGg9IjExOSIgaGVpZ2h0PSIzMiIgcng9IjE2IiBmaWxsPSIjRkYzRTc5Ii8+DQo8cGF0aCBkPSJNMjAuMDAyNyAxNC4yNEMyMC4wMDI3IDE0LjUyOCAxOS45NDY3IDE0Ljc2IDE5LjgzNDcgMTQuOTM2QzE5LjcyMjcgMTUuMTA0IDE5LjU5ODcgMTUuMjM2IDE5LjQ2MjcgMTUuMzMyQzE5LjMwMjcgMTUuNDQ0IDE5LjEyMjcgMTUuNTIgMTguOTIyNyAxNS41NlYxNS42OEMxOS4xNDY3IDE1LjcyOCAxOS4zNDY3IDE1LjgxNiAxOS41MjI3IDE1Ljk0NEMxOS42NzQ3IDE2LjA1NiAxOS44MTA3IDE2LjIxNiAxOS45MzA3IDE2LjQyNEMyMC4wNTg3IDE2LjYyNCAyMC4xMjI3IDE2Ljg5NiAyMC4xMjI3IDE3LjI0VjE4LjAyQzIwLjEyMjcgMTkuNDIgMTkuNDIyNyAyMC4xMiAxOC4wMjI3IDIwLjEySDE0LjcyMjdDMTMuMzIyNyAyMC4xMiAxMi42MjI3IDE5LjQyIDEyLjYyMjcgMTguMDJWMTcuNDJDMTIuNjIyNyAxNy4yMiAxMi43MjI3IDE3LjEyIDEyLjkyMjcgMTcuMTJIMTQuMjQyN0MxNC40NDI3IDE3LjEyIDE0LjU0MjcgMTcuMjIgMTQuNTQyNyAxNy40MlYxNy43OEMxNC41NDI3IDE4LjIyIDE0Ljc2MjcgMTguNDQgMTUuMjAyNyAxOC40NEgxNy41NDI3QzE3Ljk4MjcgMTguNDQgMTguMjAyNyAxOC4yMiAxOC4yMDI3IDE3Ljc4VjE3LjI0QzE4LjIwMjcgMTYuOCAxNy45ODI3IDE2LjU4IDE3LjU0MjcgMTYuNThIMTUuODAyN0MxNS42MDI3IDE2LjU4IDE1LjUwMjcgMTYuNDggMTUuNTAyNyAxNi4yOFYxNS4yQzE1LjUwMjcgMTUgMTUuNjAyNyAxNC45IDE1LjgwMjcgMTQuOUgxNy40MjI3QzE3Ljg2MjcgMTQuOSAxOC4wODI3IDE0LjY4IDE4LjA4MjcgMTQuMjRWMTMuODJDMTguMDgyNyAxMy4zOCAxNy44NjI3IDEzLjE2IDE3LjQyMjcgMTMuMTZIMTUuMzIyN0MxNC44ODI3IDEzLjE2IDE0LjY2MjcgMTMuMzggMTQuNjYyNyAxMy44MlYxNC4xOEMxNC42NjI3IDE0LjM4IDE0LjU2MjcgMTQuNDggMTQuMzYyNyAxNC40OEgxMy4wNDI3QzEyLjg0MjcgMTQuNDggMTIuNzQyNyAxNC4zOCAxMi43NDI3IDE0LjE4VjEzLjU4QzEyLjc0MjcgMTIuMTggMTMuNDQyNyAxMS40OCAxNC44NDI3IDExLjQ4SDE3LjkwMjdDMTkuMzAyNyAxMS40OCAyMC4wMDI3IDEyLjE4IDIwLjAwMjcgMTMuNThWMTQuMjRaTTIzLjQ5MjkgMTguMjZMMjIuOTUyOSAxOS43QzIyLjkxMjkgMTkuNzg4IDIyLjg2MDkgMTkuODYgMjIuNzk2OSAxOS45MTZDMjIuNzQwOSAxOS45NzIgMjIuNjUyOSAyMCAyMi41MzI5IDIwSDIxLjAzMjlDMjAuODMyOSAyMCAyMC43NzI5IDE5LjkgMjAuODUyOSAxOS43TDIzLjc5MjkgMTEuOUMyMy44NzI5IDExLjcgMjQuMDMyOSAxMS42IDI0LjI3MjkgMTEuNkgyNi4wMTI5QzI2LjEzMjkgMTEuNiAyNi4yMjA5IDExLjYyOCAyNi4yNzY5IDExLjY4NEMyNi4zNDA5IDExLjc0IDI2LjM5MjkgMTEuODEyIDI2LjQzMjkgMTEuOUwyOS4zNzI5IDE5LjdDMjkuNDUyOSAxOS45IDI5LjM5MjkgMjAgMjkuMTkyOSAyMEgyNy42OTI5QzI3LjU3MjkgMjAgMjcuNDgwOSAxOS45NzIgMjcuNDE2OSAxOS45MTZDMjcuMzYwOSAxOS44NiAyNy4zMTI5IDE5Ljc4OCAyNy4yNzI5IDE5LjdMMjYuNzMyOSAxOC4yNkgyMy40OTI5Wk0yNi4xMzI5IDE2LjU4TDI1LjE3MjkgMTRIMjUuMDUyOUwyNC4wOTI5IDE2LjU4SDI2LjEzMjlaTTMyLjI2MjggMTQuNzhIMzMuODgyOEwzNS40NDI4IDExLjlDMzUuNDkwOCAxMS44MTIgMzUuNTUwOCAxMS43NCAzNS42MjI4IDExLjY4NEMzNS43MDI4IDExLjYyOCAzNS44MDI4IDExLjYgMzUuOTIyOCAxMS42SDM3LjQyMjhDMzcuNTEwOCAxMS42IDM3LjU3NDggMTEuNjI4IDM3LjYxNDggMTEuNjg0QzM3LjY1NDggMTEuNzQgMzcuNjUwOCAxMS44MTIgMzcuNjAyOCAxMS45TDM1LjU2MjggMTUuNTZMMzcuODQyOCAxOS43QzM3Ljg5MDggMTkuNzg4IDM3Ljg5NDggMTkuODYgMzcuODU0OCAxOS45MTZDMzcuODE0OCAxOS45NzIgMzcuNzUwOCAyMCAzNy42NjI4IDIwSDM2LjE2MjhDMzYuMDQyOCAyMCAzNS45NDI4IDE5Ljk3MiAzNS44NjI4IDE5LjkxNkMzNS43OTA4IDE5Ljg2IDM1LjczMDggMTkuNzg4IDM1LjY4MjggMTkuN0wzMy45NDI4IDE2LjQ2SDMyLjI2MjhWMTkuN0MzMi4yNjI4IDE5LjkgMzIuMTYyOCAyMCAzMS45NjI4IDIwSDMwLjY0MjhDMzAuNDQyOCAyMCAzMC4zNDI4IDE5LjkgMzAuMzQyOCAxOS43VjExLjlDMzAuMzQyOCAxMS43IDMwLjQ0MjggMTEuNiAzMC42NDI4IDExLjZIMzEuOTYyOEMzMi4xNjI4IDExLjYgMzIuMjYyOCAxMS43IDMyLjI2MjggMTEuOVYxNC43OFpNNDAuNjUzOCAxOC4yNkw0MC4xMTM4IDE5LjdDNDAuMDczOCAxOS43ODggNDAuMDIxOCAxOS44NiAzOS45NTc4IDE5LjkxNkMzOS45MDE4IDE5Ljk3MiAzOS44MTM4IDIwIDM5LjY5MzggMjBIMzguMTkzOEMzNy45OTM4IDIwIDM3LjkzMzggMTkuOSAzOC4wMTM4IDE5LjdMNDAuOTUzOCAxMS45QzQxLjAzMzggMTEuNyA0MS4xOTM4IDExLjYgNDEuNDMzOCAxMS42SDQzLjE3MzhDNDMuMjkzOCAxMS42IDQzLjM4MTggMTEuNjI4IDQzLjQzNzggMTEuNjg0QzQzLjUwMTggMTEuNzQgNDMuNTUzOCAxMS44MTIgNDMuNTkzOCAxMS45TDQ2LjUzMzggMTkuN0M0Ni42MTM4IDE5LjkgNDYuNTUzOCAyMCA0Ni4zNTM4IDIwSDQ0Ljg1MzhDNDQuNzMzOCAyMCA0NC42NDE4IDE5Ljk3MiA0NC41Nzc4IDE5LjkxNkM0NC41MjE4IDE5Ljg2IDQ0LjQ3MzggMTkuNzg4IDQ0LjQzMzggMTkuN0w0My44OTM4IDE4LjI2SDQwLjY1MzhaTTQzLjI5MzggMTYuNThMNDIuMzMzOCAxNEg0Mi4yMTM4TDQxLjI1MzggMTYuNThINDMuMjkzOFpNNTQuNTIzOCAxNC4yNEM1NC41MjM4IDE0LjUyOCA1NC40Njc4IDE0Ljc2IDU0LjM1NTggMTQuOTM2QzU0LjI0MzggMTUuMTA0IDU0LjExOTggMTUuMjM2IDUzLjk4MzggMTUuMzMyQzUzLjgyMzggMTUuNDQ0IDUzLjY0MzggMTUuNTIgNTMuNDQzOCAxNS41NlYxNS42OEM1My42Njc4IDE1LjcyOCA1My44Njc4IDE1LjgxNiA1NC4wNDM4IDE1Ljk0NEM1NC4xOTU4IDE2LjA1NiA1NC4zMzE4IDE2LjIxNiA1NC40NTE4IDE2LjQyNEM1NC41Nzk4IDE2LjYyNCA1NC42NDM4IDE2Ljg5NiA1NC42NDM4IDE3LjI0VjE4LjAyQzU0LjY0MzggMTkuNDIgNTMuOTQzOCAyMC4xMiA1Mi41NDM4IDIwLjEySDQ5LjI0MzhDNDcuODQzOCAyMC4xMiA0Ny4xNDM4IDE5LjQyIDQ3LjE0MzggMTguMDJWMTcuNDJDNDcuMTQzOCAxNy4yMiA0Ny4yNDM4IDE3LjEyIDQ3LjQ0MzggMTcuMTJINDguNzYzOEM0OC45NjM4IDE3LjEyIDQ5LjA2MzggMTcuMjIgNDkuMDYzOCAxNy40MlYxNy43OEM0OS4wNjM4IDE4LjIyIDQ5LjI4MzggMTguNDQgNDkuNzIzOCAxOC40NEg1Mi4wNjM4QzUyLjUwMzggMTguNDQgNTIuNzIzOCAxOC4yMiA1Mi43MjM4IDE3Ljc4VjE3LjI0QzUyLjcyMzggMTYuOCA1Mi41MDM4IDE2LjU4IDUyLjA2MzggMTYuNThINTAuMzIzOEM1MC4xMjM4IDE2LjU4IDUwLjAyMzggMTYuNDggNTAuMDIzOCAxNi4yOFYxNS4yQzUwLjAyMzggMTUgNTAuMTIzOCAxNC45IDUwLjMyMzggMTQuOUg1MS45NDM4QzUyLjM4MzggMTQuOSA1Mi42MDM4IDE0LjY4IDUyLjYwMzggMTQuMjRWMTMuODJDNTIuNjAzOCAxMy4zOCA1Mi4zODM4IDEzLjE2IDUxLjk0MzggMTMuMTZINDkuODQzOEM0OS40MDM4IDEzLjE2IDQ5LjE4MzggMTMuMzggNDkuMTgzOCAxMy44MlYxNC4xOEM0OS4xODM4IDE0LjM4IDQ5LjA4MzggMTQuNDggNDguODgzOCAxNC40OEg0Ny41NjM4QzQ3LjM2MzggMTQuNDggNDcuMjYzOCAxNC4zOCA0Ny4yNjM4IDE0LjE4VjEzLjU4QzQ3LjI2MzggMTIuMTggNDcuOTYzOCAxMS40OCA0OS4zNjM4IDExLjQ4SDUyLjQyMzhDNTMuODIzOCAxMS40OCA1NC41MjM4IDEyLjE4IDU0LjUyMzggMTMuNThWMTQuMjRaTTU4LjAxNCAxOC4yNkw1Ny40NzQgMTkuN0M1Ny40MzQgMTkuNzg4IDU3LjM4MiAxOS44NiA1Ny4zMTggMTkuOTE2QzU3LjI2MiAxOS45NzIgNTcuMTc0IDIwIDU3LjA1NCAyMEg1NS41NTRDNTUuMzU0IDIwIDU1LjI5NCAxOS45IDU1LjM3NCAxOS43TDU4LjMxNCAxMS45QzU4LjM5NCAxMS43IDU4LjU1NCAxMS42IDU4Ljc5NCAxMS42SDYwLjUzNEM2MC42NTQgMTEuNiA2MC43NDIgMTEuNjI4IDYwLjc5OCAxMS42ODRDNjAuODYyIDExLjc0IDYwLjkxNCAxMS44MTIgNjAuOTU0IDExLjlMNjMuODk0IDE5LjdDNjMuOTc0IDE5LjkgNjMuOTE0IDIwIDYzLjcxNCAyMEg2Mi4yMTRDNjIuMDk0IDIwIDYyLjAwMiAxOS45NzIgNjEuOTM4IDE5LjkxNkM2MS44ODIgMTkuODYgNjEuODM0IDE5Ljc4OCA2MS43OTQgMTkuN0w2MS4yNTQgMTguMjZINTguMDE0Wk02MC42NTQgMTYuNThMNTkuNjk0IDE0SDU5LjU3NEw1OC42MTQgMTYuNThINjAuNjU0Wk02Ny40NDg2IDE5LjdDNjcuNDQ4NiAxOS45IDY3LjM0ODYgMjAgNjcuMTQ4NiAyMEg2NS44Mjg2QzY1LjYyODYgMjAgNjUuNTI4NiAxOS45IDY1LjUyODYgMTkuN1YxMy4yOEg2My4xMjg2QzYyLjkyODYgMTMuMjggNjIuODI4NiAxMy4xOCA2Mi44Mjg2IDEyLjk4VjExLjlDNjIuODI4NiAxMS43IDYyLjkyODYgMTEuNiA2My4xMjg2IDExLjZINjkuODQ4NkM3MC4wNDg2IDExLjYgNzAuMTQ4NiAxMS43IDcwLjE0ODYgMTEuOVYxMi45OEM3MC4xNDg2IDEzLjE4IDcwLjA0ODYgMTMuMjggNjkuODQ4NiAxMy4yOEg2Ny40NDg2VjE5LjdaTTc2LjE3NzIgMTQuMTJDNzcuNTc3MiAxNC4xMiA3OC4yNzcyIDE0LjgyIDc4LjI3NzIgMTYuMjJWMTcuOUM3OC4yNzcyIDE5LjMgNzcuNTc3MiAyMCA3Ni4xNzcyIDIwSDcxLjM3NzJDNzEuMTc3MiAyMCA3MS4wNzcyIDE5LjkgNzEuMDc3MiAxOS43VjExLjlDNzEuMDc3MiAxMS43IDcxLjE3NzIgMTEuNiA3MS4zNzcyIDExLjZINzIuNjk3MkM3Mi44OTcyIDExLjYgNzIuOTk3MiAxMS43IDcyLjk5NzIgMTEuOVYxNC4xMkg3Ni4xNzcyWk03NS42OTcyIDE4LjMyQzc2LjEzNzIgMTguMzIgNzYuMzU3MiAxOC4xIDc2LjM1NzIgMTcuNjZWMTYuNDZDNzYuMzU3MiAxNi4wMiA3Ni4xMzcyIDE1LjggNzUuNjk3MiAxNS44SDcyLjk5NzJWMTguMzJINzUuNjk3MloiIGZpbGw9IndoaXRlIi8+DQo8cmVjdCB4PSI4NyIgeT0iNCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiByeD0iMTIiIGZpbGw9IiNGRjNFNzkiLz4NCjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNOTkuOCAxNS45OTk5TDk2Ljc5MTYgMTMuMjI5Qzk2LjM2NDEgMTIuODM1MyA5Ni4zNjExIDEyLjE2MTQgOTYuNzg1MSAxMS43NjM5TDk2LjkyMDMgMTEuNjM3MkM5Ny4zMDMyIDExLjI3ODIgOTcuODk4NSAxMS4yNzYzIDk4LjI4MzYgMTEuNjMyOUwxMDIuOTM4IDE1Ljk0MjZDMTAyLjk3MSAxNS45NzM1IDEwMi45NzEgMTYuMDI2MyAxMDIuOTM4IDE2LjA1NzJMOTguMzQ2NyAyMC4zMDg1Qzk3LjkyNjEgMjAuNjk4IDk3LjI3NTggMjAuNjk2IDk2Ljg1NzYgMjAuMzAzOUM5Ni4zOTQ1IDE5Ljg2OTcgOTYuMzk3NyAxOS4xMzM2IDk2Ljg2NDYgMTguNzAzNkw5OS44IDE1Ljk5OTlaIiBmaWxsPSJ3aGl0ZSIvPg0KPC9zdmc+DQo=);
+  background-image: url("https://ComRety.github.io/proectMain/dist/icon/Group10.svg");
   transition: 1s;
 }
 
@@ -1079,7 +916,7 @@ svg {
 
 .commerce__receive::after {
   position: relative;
-  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAyNCAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxnIGlkPSJpYy9tb3JlIj4NCjxwYXRoIGlkPSJMaW5lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTkuMTYyNSAxNy42MDQxQzguODM4MTkgMTcuOTc5NiA4LjgzODE5IDE4LjUzNiA5LjE2MjUgMTguOTExNUw5LjI5NDMyIDE5LjA2NDFDOS42OTMxNyAxOS41MjU4IDEwLjQwOSAxOS41MjU4IDEwLjgwNzggMTkuMDY0MUwxNC44MzcyIDE0LjM5OTRDMTUuMTYxNSAxNC4wMjM5IDE1LjE2MTUgMTMuNDY3NSAxNC44MzcyIDEzLjA5MkwxMC44MDc4IDguNDI3MjhDMTAuNDA5IDcuOTY1NTMgOS42OTMxNyA3Ljk2NTUzIDkuMjk0MzIgOC40MjcyOEw5LjE2MjUgOC41Nzk4OEM4LjgzODE5IDguOTU1MzMgOC44MzgxOSA5LjUxMTggOS4xNjI1IDkuODg3MjZMMTIuNDk1NCAxMy43NDU3TDkuMTYyNSAxNy42MDQxWiIgZmlsbD0iI0ZGM0U3OSIvPg0KPC9nPg0KPC9zdmc+DQo=);
+  content: url("https://ComRety.github.io/proectMain/dist/icon/more.svg");
   top: 10px;
 }
 
@@ -1125,8 +962,7 @@ svg {
   padding: 20px;
   gap: 15px;
 }
-
-.footer__par {
+.footer .footer__par {
   color: #7E7E82;
   text-align: center;
   font-family: "TT Lakes";
@@ -1169,13 +1005,7 @@ svg {
   box-shadow: 21px 4px 28px rgba(0, 0, 0, 0.24);
   background-color: rgb(255, 255, 255);
 }
-
-.modal-order-call.order {
-  visibility: visible;
-  opacity: 1;
-}
-
-.order-menu__h2 {
+.order-menu .order-menu__h2 {
   position: relative;
   top: 20px;
   color: #1B1C21;
@@ -1186,38 +1016,34 @@ svg {
   line-height: 32px;
   letter-spacing: -0.6px;
 }
-
-.order-menu__h2::before {
-  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQgNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBpZD0iaGlnaGxpZ2h0IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTQgNEM0IDEuNzkwODYgMi4yMDkxNCAwIDAgMFY0MEMyLjIwOTE0IDQwIDQgMzguMjA5MSA0IDM2VjRaIiBmaWxsPSIjNDFGNkQ3Ii8+DQo8L3N2Zz4NCg==);
+.order-menu .order-menu__h2::before {
+  content: url("https://ComRety.github.io/proectMain/dist/icon/highlight.svg");
   position: relative;
   top: 10px;
   left: -15px;
 }
-
-.order-menu__button-close {
+.order-menu .order-menu__button-close {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxnIGlkPSJpYy9idXJnZXIiPg0KPHJlY3QgaWQ9ImJhY2siIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcng9IjIwIiBmaWxsPSIjRkYzRTc5Ii8+DQo8cGF0aCBpZD0iaWNvbiIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy43OTM1IDEyLjI1NzFDMTMuNDAzIDExLjg2NjYgMTIuNzY5OCAxMS44NjY2IDEyLjM3OTMgMTIuMjU3MUwxMi4yNTcxIDEyLjM3OTNDMTEuODY2NiAxMi43Njk4IDExLjg2NjYgMTMuNDAzIDEyLjI1NzEgMTMuNzkzNUwxOC40NjM2IDIwTDEyLjI1NzEgMjYuMjA2NUMxMS44NjY2IDI2LjU5NyAxMS44NjY2IDI3LjIzMDIgMTIuMjU3MSAyNy42MjA3TDEyLjM3OTMgMjcuNzQyOUMxMi43Njk4IDI4LjEzMzQgMTMuNDAzIDI4LjEzMzQgMTMuNzkzNSAyNy43NDI5TDIwIDIxLjUzNjRMMjYuMjA2NSAyNy43NDI5QzI2LjU5NyAyOC4xMzM0IDI3LjIzMDIgMjguMTMzNCAyNy42MjA3IDI3Ljc0MjlMMjcuNzQyOSAyNy42MjA3QzI4LjEzMzQgMjcuMjMwMiAyOC4xMzM0IDI2LjU5NyAyNy43NDI5IDI2LjIwNjVMMjEuNTM2NCAyMEwyNy43NDI5IDEzLjc5MzVDMjguMTMzNCAxMy40MDMgMjguMTMzNCAxMi43Njk4IDI3Ljc0MjkgMTIuMzc5M0wyNy42MjA3IDEyLjI1NzFDMjcuMjMwMiAxMS44NjY2IDI2LjU5NyAxMS44NjY2IDI2LjIwNjUgMTIuMjU3MUwyMCAxOC40NjM2TDEzLjc5MzUgMTIuMjU3MVoiIGZpbGw9IndoaXRlIi8+DQo8L2c+DQo8L3N2Zz4NCg==);
+  background-image: url("https://ComRety.github.io/proectMain/dist/icon/close.svg");
   transition: 1s;
 }
-
-.order-menu__button-close:hover,
-.order-menu__button-send:hover {
+.order-menu .order-menu__button-close:hover,
+.order-menu .order-menu__button-send:hover {
   transform: scale(1.2);
 }
-
-.order-menu__button-send {
+.order-menu .order-menu__button-send {
   transition: 1s;
   width: 116px;
   padding: 0 15px;
   height: 32px;
   border-radius: 16px;
   background: #FF3E79;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAYCAYAAADpnJ2CAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIeSURBVHgBtZY/aBNRHMe/v8uhKXaIm7pYpZOLcXLQwBXdHEpBN8Ec6FZoxoiDKYjpaLGjkgTc7OBgcZIeYouTZBVEr4u4tVv/3vv19971Ekouzbs2+Qx37yXv5cPv5Xe/3xFOgL1KAdGYJ6NpEOTuFGRcSFkZghHKoIV9BPRjIez3m9RXVnpeAdHLdMEAmJsink8T9wjZq04gQkNkHs5GCMU+fV8I+gqNTNGqDCcwLCKUaa3e6hGORJageCqJ1Ol+iNpIZMZCDZOAiZDvVj0J9glGh5xevtIRyrVite3SReDVY2DyMrJDczrKHHu1AjhqWO2pPgRKN4Dp2zJhoP0XGchDub8cRLue9ZalFeD/Zjz27wOzD5AJ4qKjL9YbtGzunUT2J54/ugO8n5Wjtq0NTlH/h9kqSSJtfo3nk1eAxWe20qsOTsuF/PH5+BhscMEU9q+oKYzn40y9dT2e//4HvPggkW/Z7N5wAVPl7dCPxeLT+K5ZXgPersAe1XaROx9A7dqtL9/rypY+Ax/XkQnmwBymtKLVuN8NQMt8kX752c1Ue0L6Vr/mHpnnrdqRztD6Mk4HmY5hstRUcqZPGB0h9lSzIzTkzvnIkkBZOKCZpPt3hBTUtuDw1NClTD6tv253PD3fD60RkwSgZig44RXjmLhULccvUVnFIoJqwdmpUfCmpxoMrDFHYk9WFqUj3Ux3YEOOrq2fM+S2m2mihENNPbXrfME/+gAAAABJRU5ErkJggg==);
+  background-image: url("https://ComRety.github.io/proectMain/dist/icon/goside.png");
   background-repeat: no-repeat;
   background-position: right center;
-  color: #FFF;
+  color: #ffffff;
   text-align: left;
   font-family: "TT Lakes";
   font-size: 12px;
@@ -1229,6 +1055,11 @@ svg {
   align-self: flex-end;
 }
 
+.modal-order-call.order {
+  visibility: visible;
+  opacity: 1;
+}
+
 .form-order {
   position: relative;
   top: 50px;
@@ -1236,15 +1067,14 @@ svg {
   flex-direction: column;
   gap: 15px;
 }
-
-.form-order__tel {
+.form-order .form-order__tel {
   width: auto;
   padding: 0 15px;
   height: 48px;
   flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid #EAEAEA;
-  background: #FFF;
+  background: #ffffff;
   color: #1B1C21;
   font-family: "TT Lakes";
   font-size: 16px;
@@ -1253,8 +1083,7 @@ svg {
   line-height: 24px;
   letter-spacing: -0.2px;
 }
-
-.form-order__tel::placeholder {
+.form-order .form-order__tel::placeholder {
   color: #B5B6BC;
   font-family: "TT Lakes";
   font-size: 16px;
@@ -1302,25 +1131,6 @@ svg {
   opacity: 1;
 }
 
-.call-menu__h2 {
-  position: relative;
-  top: 20px;
-  color: #1B1C21;
-  font-family: "TT Lakes";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px;
-  letter-spacing: -0.6px;
-}
-
-.call-menu__h2::before {
-  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQgNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+DQo8cGF0aCBpZD0iaGlnaGxpZ2h0IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTQgNEM0IDEuNzkwODYgMi4yMDkxNCAwIDAgMFY0MEMyLjIwOTE0IDQwIDQgMzguMjA5MSA0IDM2VjRaIiBmaWxsPSIjNDFGNkQ3Ii8+DQo8L3N2Zz4NCg==);
-  position: relative;
-  top: 10px;
-  left: -15px;
-}
-
 .call-menu {
   box-sizing: border-box;
   position: absolute;
@@ -1332,31 +1142,45 @@ svg {
   box-shadow: 21px 4px 28px rgba(0, 0, 0, 0.24);
   background-color: rgb(255, 255, 255);
 }
-
-.call-menu__button-close {
+.call-menu .call-menu__h2 {
+  position: relative;
+  top: 20px;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+}
+.call-menu .call-menu__h2::before {
+  content: url("https://ComRety.github.io/proectMain/dist/icon/highlight.svg");
+  position: relative;
+  top: 10px;
+  left: -15px;
+}
+.call-menu .call-menu__button-close {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxnIGlkPSJpYy9idXJnZXIiPg0KPHJlY3QgaWQ9ImJhY2siIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcng9IjIwIiBmaWxsPSIjRkYzRTc5Ii8+DQo8cGF0aCBpZD0iaWNvbiIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy43OTM1IDEyLjI1NzFDMTMuNDAzIDExLjg2NjYgMTIuNzY5OCAxMS44NjY2IDEyLjM3OTMgMTIuMjU3MUwxMi4yNTcxIDEyLjM3OTNDMTEuODY2NiAxMi43Njk4IDExLjg2NjYgMTMuNDAzIDEyLjI1NzEgMTMuNzkzNUwxOC40NjM2IDIwTDEyLjI1NzEgMjYuMjA2NUMxMS44NjY2IDI2LjU5NyAxMS44NjY2IDI3LjIzMDIgMTIuMjU3MSAyNy42MjA3TDEyLjM3OTMgMjcuNzQyOUMxMi43Njk4IDI4LjEzMzQgMTMuNDAzIDI4LjEzMzQgMTMuNzkzNSAyNy43NDI5TDIwIDIxLjUzNjRMMjYuMjA2NSAyNy43NDI5QzI2LjU5NyAyOC4xMzM0IDI3LjIzMDIgMjguMTMzNCAyNy42MjA3IDI3Ljc0MjlMMjcuNzQyOSAyNy42MjA3QzI4LjEzMzQgMjcuMjMwMiAyOC4xMzM0IDI2LjU5NyAyNy43NDI5IDI2LjIwNjVMMjEuNTM2NCAyMEwyNy43NDI5IDEzLjc5MzVDMjguMTMzNCAxMy40MDMgMjguMTMzNCAxMi43Njk4IDI3Ljc0MjkgMTIuMzc5M0wyNy42MjA3IDEyLjI1NzFDMjcuMjMwMiAxMS44NjY2IDI2LjU5NyAxMS44NjY2IDI2LjIwNjUgMTIuMjU3MUwyMCAxOC40NjM2TDEzLjc5MzUgMTIuMjU3MVoiIGZpbGw9IndoaXRlIi8+DQo8L2c+DQo8L3N2Zz4NCg==);
+  background-image: url("https://ComRety.github.io/proectMain/dist/icon/close.svg");
   transition: 1s;
 }
-
-.call-menu__button-close:hover,
-.call-menu__button-send:hover {
+.call-menu .call-menu__button-close:hover,
+.call-menu .call-menu__button-send:hover {
   transform: scale(1.2);
 }
-
-.call-menu__button-send {
+.call-menu .call-menu__button-send {
   transition: 1s;
   width: 116px;
   padding: 0 15px;
   height: 32px;
   border-radius: 16px;
   background: #FF3E79;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAYCAYAAADpnJ2CAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIeSURBVHgBtZY/aBNRHMe/v8uhKXaIm7pYpZOLcXLQwBXdHEpBN8Ec6FZoxoiDKYjpaLGjkgTc7OBgcZIeYouTZBVEr4u4tVv/3vv19971Ekouzbs2+Qx37yXv5cPv5Xe/3xFOgL1KAdGYJ6NpEOTuFGRcSFkZghHKoIV9BPRjIez3m9RXVnpeAdHLdMEAmJsink8T9wjZq04gQkNkHs5GCMU+fV8I+gqNTNGqDCcwLCKUaa3e6hGORJageCqJ1Ol+iNpIZMZCDZOAiZDvVj0J9glGh5xevtIRyrVite3SReDVY2DyMrJDczrKHHu1AjhqWO2pPgRKN4Dp2zJhoP0XGchDub8cRLue9ZalFeD/Zjz27wOzD5AJ4qKjL9YbtGzunUT2J54/ugO8n5Wjtq0NTlH/h9kqSSJtfo3nk1eAxWe20qsOTsuF/PH5+BhscMEU9q+oKYzn40y9dT2e//4HvPggkW/Z7N5wAVPl7dCPxeLT+K5ZXgPersAe1XaROx9A7dqtL9/rypY+Ax/XkQnmwBymtKLVuN8NQMt8kX752c1Ue0L6Vr/mHpnnrdqRztD6Mk4HmY5hstRUcqZPGB0h9lSzIzTkzvnIkkBZOKCZpPt3hBTUtuDw1NClTD6tv253PD3fD60RkwSgZig44RXjmLhULccvUVnFIoJqwdmpUfCmpxoMrDFHYk9WFqUj3Ux3YEOOrq2fM+S2m2mihENNPbXrfME/+gAAAABJRU5ErkJggg==);
+  background-image: url("https://ComRety.github.io/proectMain/dist/icon/goside.png");
   background-repeat: no-repeat;
   background-position: right center;
-  color: #FFF;
+  color: #ffffff;
   text-align: left;
   font-family: "TT Lakes";
   font-size: 12px;
@@ -1377,7 +1201,7 @@ svg {
   flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid #EAEAEA;
-  background: #FFF;
+  background: #ffffff;
   color: #1B1C21;
   font-family: "TT Lakes";
   font-size: 16px;
@@ -1407,7 +1231,7 @@ svg {
   flex-shrink: 0;
   border-radius: 8px;
   border: 1px solid #EAEAEA;
-  background: #FFF;
+  background: #ffffff;
   color: #1B1C21;
   font-family: "TT Lakes";
   font-size: 16px;
@@ -1461,5 +1285,144 @@ svg {
   }
   .form-call {
     top: -10px;
+  }
+}
+.flexbox-services-block {
+  position: relative;
+  display: flex;
+  overflow: auto;
+  top: 80px;
+  left: 15px;
+  width: 95%;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+.flexbox-services-block .flexbox-services-block__button-item {
+  background-color: #F8F8F8;
+  color: #7E7E82;
+  font-family: "TT Lakes";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  padding: 10px 20px;
+  display: inline-block;
+}
+.flexbox-services-block .flexbox-services-block__button-item_custom {
+  border-radius: 6px;
+  border: 2px solid #B8FFEC;
+  background-color: #ffffff;
+}
+
+.flexbox-services-block::-webkit-scrollbar {
+  width: 0;
+}
+
+.flexbox-services-block__button-item:hover {
+  color: #FF3E79;
+}
+
+.section-services {
+  position: relative;
+  width: 100%;
+  height: 150px;
+}
+.section-services .block-services__h1 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #1B1C21;
+  font-family: "TT Lakes";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+}
+.section-services .block-services__h1::before {
+  content: url("https://ComRety.github.io/proectMain/dist/icon/highlight.svg");
+  position: absolute;
+  left: -15px;
+}
+
+@media (min-width: 768px) {
+  .block-services__repair-span,
+  .block-services__repair-button,
+  .block-services__checkstatus-span,
+  .block-services__checkstatus-button,
+  .block-services__checkstatus-img,
+  .block-services__repair-img {
+    display: none;
+  }
+}
+@media (min-width: 1366px) {
+  .block-services__h1 {
+    top: 50px;
+    left: 30px;
+  }
+  .flexbox-services-block {
+    top: 110px;
+    left: 30px;
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+  .block-services__h1::before {
+    left: -30px;
+  }
+  .block-services__repair-span,
+  .block-services__checkstatus-span,
+  .block-services__repair-button,
+  .block-services__checkstatus-button,
+  .block-services__checkstatus-img,
+  .block-services__repair-img {
+    display: inline-block;
+  }
+  .block-services__repair-button,
+  .block-services__checkstatus-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50px;
+    border-radius: 20px;
+    transition: 1s;
+  }
+  .block-services__repair-button:hover,
+  .block-services__checkstatus-button:hover {
+    transform: scale(1.2);
+  }
+  .block-services__repair-img,
+  .block-services__checkstatus-img {
+    border-radius: 20px;
+  }
+  .block-services__checkstatus-button {
+    position: absolute;
+    right: 30px;
+  }
+  .block-services__checkstatus-span,
+  .block-services__repair-span {
+    color: #1B1C21;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    position: absolute;
+    top: 60px;
+  }
+  .block-services__checkstatus-span:hover,
+  .block-services__repair-span:hover {
+    color: #FF3E79;
+  }
+  .block-services__checkstatus-span {
+    right: 80px;
+  }
+  .block-services__repair-button {
+    right: 240px;
+  }
+  .block-services__repair-span {
+    right: 290px;
   }
 }
